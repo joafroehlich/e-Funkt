@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exponential-, Potenz-, Logarithmus-, e- , Trigonometrische Funktionen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<pre><p class="Text1">Exponential-, Potenz-, Logarithmus-, 
+e- , Trigonometrische Funktionen
+<p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die 
+Schalter: Prüfen und Lösung.</span>
+<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es 
+oder starten Sie eine Lösung.</span></p></pre>
+
+    <p class="Aufgabe"><span style= "background-color:white;">Ergänzen Sie die Wertetabellen für die Graphen:</span></p>
+    
+<!--//Aufgabe 109-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 109
+
+y = 6 + 2e<sup>x</sup>       
+
+x     -2            
+y     6,3     11,4 </strong>
+
+<img src="Aufgabe109.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe109.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 110-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 110
+
+y = 3e<sup>-x</sup> - 7         
+
+x      0     3   
+y     -4   <input type="text" id="Eintrag110" maxlength="5" size="2" style= background-color:yellow ></input></strong>
+
+<img src="Aufgabe110.jpg" >
+
+<button id="Pruef110" onclick="Aufgabe110()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe110() { 
+                                                
+                          if (Eintrag110.value=="-6,85") {alert("Richtig"); document.getElementById("Pruef110").disabled= true;
+                          }  
+                           
+                          else if (Eintrag110.value!=="-6,85" && Eintrag110.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag110").value="-6,85"; window.open('e-Funkt_Aufgabe110.html');           
+                          document.getElementById("Pruef110").disabled= true;}
+                               
+                          else if (Eintrag110.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 111-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 111
+
+y = x<sup>5</sup> * e<sup>-x</sup>         
+
+x     -1                 
+y     -e     4,3 </strong>
+
+<img src="Aufgabe111.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe111.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 112-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 112
+
+y = √x * e<sup>-x</sup>          
+
+x     1     0,01 oder 2,95      
+y   <input type="text" id="Eintrag112" maxlength="3" size="1" style= background-color:yellow ></input>      0,09 </strong> 
+
+<button id="Pruef112" onclick="Aufgabe112()">Prüfen</button></p></pre>
+
+<img src="Aufgabe112.jpg" >
+    
+                       <script>
+                        function Aufgabe112() { 
+                                                
+                          if (Eintrag112.value=="0,4") {alert("Richtig"); document.getElementById("Pruef112").disabled= true;
+                          }  
+                           
+                          else if (Eintrag112.value!=="0,4" && Eintrag112.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag112").value="0,4"; window.open('e-Funkt_Aufgabe112.html');           
+                          document.getElementById("Pruef112").disabled= true;}
+                               
+                          else if (Eintrag112.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 113-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 113
+
+y = 0,5x + 3 + e<sup>-x</sup>        
+
+x     -1             
+y     5,2     4,1</strong>   
+
+<img src="Aufgabe113.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe113.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 114-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 114
+
+y = x - ex          
+
+x      -1,96 oder 1,2      2   
+y          -2,1          <input type="text" id="Eintrag114" maxlength="4" size="1" style= background-color:yellow ></input> </strong>   
+
+<button id="Pruef114" onclick="Aufgabe114()">Prüfen</button></p></pre>
+
+<img src="Aufgabe114.jpg" >
+    
+ 
+                      <script>
+                        function Aufgabe114() { 
+                                                
+                          if (Eintrag114.value=="-5,4") {alert("Richtig"); document.getElementById("Pruef114").disabled= true;
+                          }  
+                           
+                          else if (Eintrag114.value!=="-5,4" && Eintrag114.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag114").value="-5,4"; window.open('e-Funkt_Aufgabe114.html');           
+                          document.getElementById("Pruef114").disabled= true;}
+                               
+                          else if (Eintrag114.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>   
+                      
+<!--//Aufgabe 115-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 115
+
+y = 3e<sup>x</sup> - x<sup>7</sup>            
+
+x     0            
+y     3     4,9</strong>
+
+<img src="Aufgabe115.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe115.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 116-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 116
+
+y = x² + e<sup>x</sup>                
+
+x     -2     1
+y    <input type="text" id="Eintrag116" maxlength="3" size="1" style= background-color:yellow ></input>  e </strong> 
+
+<button id="Pruef116" onclick="Aufgabe116()">Prüfen</button></p></pre>
+
+<img src="Aufgabe116.jpg" >
+    
+ 
+                      <script>
+                        function Aufgabe116() { 
+                                                
+                          if (Eintrag116.value=="0,5") {alert("Richtig"); document.getElementById("Pruef116").disabled= true;
+                          }  
+                           
+                          else if (Eintrag116.value!=="0,5" && Eintrag116.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag116").value="0,5"; window.open('e-Funkt_Aufgabe116.html');           
+                          document.getElementById("Pruef116").disabled= true;}
+                               
+                          else if (Eintrag116.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 117-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 117
+
+y = e<sup>x-2</sup>            
+
+x     1                 
+y     0,4     e</strong>
+
+<img src="Aufgabe117.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe117.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 118-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 118
+
+y = 0,5e<sup>-x</sup> + 3             
+
+x     -2     1         
+y     6,7  <input type="text" id="Eintrag118" maxlength="3" size="1" style= background-color:yellow ></input></strong> 
+
+<button id="Pruef118" onclick="Aufgabe118()">Prüfen</button></p></pre>
+
+<img src="Aufgabe118.jpg" >
+    
+ 
+                      <script>
+                        function Aufgabe118() { 
+                                                
+                          if (Eintrag118.value=="3,2") {alert("Richtig"); document.getElementById("Pruef118").disabled= true;
+                          }  
+                           
+                          else if (Eintrag118.value!=="3,2" && Eintrag118.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag118").value="3,2"; window.open('e-Funkt_Aufgabe118.html');           
+                          document.getElementById("Pruef118").disabled= true;}
+                               
+                          else if (Eintrag118.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 119-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 119
+
+y = 0,25x - e<sup>x</sup>             
+
+x               2   
+y     -2,5     -6,9 </strong>
+
+<img src="Aufgabe119.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe119.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 120-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 120
+
+y = x + e<sup>x</sup>           
+
+x    <input type="text" id="Eintrag120" maxlength="2" size="1" style= background-color:yellow ></input>     1   
+y     -1,9     3,7   </strong> 
+
+<button id="Pruef120" onclick="Aufgabe120()">Prüfen</button></p></pre>
+
+<img src="Aufgabe120.jpg" > 
+    
+ 
+                      <script>
+                        function Aufgabe120() { 
+                                                
+                          if (Eintrag120.value=="-2") {alert("Richtig"); document.getElementById("Pruef120").disabled= true;
+                          }  
+                           
+                          else if (Eintrag120.value!=="-2" && Eintrag120.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag120").value="-2"; window.open('e-Funkt_Aufgabe120.html');           
+                          document.getElementById("Pruef120").disabled= true;}
+                               
+                          else if (Eintrag120.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 121-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 121
+
+y = 2x - e<sup>x</sup>       
+
+x     -1     -1,6 oder 2     
+y                -3,4</strong>  
+
+<img src="Aufgabe121.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe121.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 122-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 122
+
+y = x + 0,5e-x         
+
+x     -2    <input type="text" id="Eintrag122" maxlength="4" size="1" style= background-color:yellow ></input>          
+y     1,7     3</strong> 
+
+<button id="Pruef122" onclick="Aufgabe122()">Prüfen</button></p></pre>
+
+<img src="Aufgabe122.jpg" >
+    
+ 
+                      <script>
+                        function Aufgabe122() { 
+                                                
+                          if (Eintrag122.value=="-2,4") {alert("Richtig"); document.getElementById("Pruef122").disabled= true;
+                          }  
+                           
+                          else if (Eintrag122.value!=="-2,4" && Eintrag122.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag122").value="-2,4"; window.open('e-Funkt_Aufgabe122.html');           
+                          document.getElementById("Pruef122").disabled= true;}
+                               
+                          else if (Eintrag122.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 123-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 123
+
+y = e<sup>x</sup> + e<sup>-x</sup>       
+
+x     -1                 
+y     3,1     7,5?   </strong>   
+
+<img src="Aufgabe123.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe123.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 124-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 124
+
+y = e * x + e<sup>-x</sup>            
+
+x   <input type="text" id="Eintrag124" maxlength="2" size="1" style= background-color:yellow ></input>    2   
+y     0     5,6 </strong> 
+
+<button id="Pruef124" onclick="Aufgabe124()">Prüfen</button></p></pre>
+
+<img src="Aufgabe124.jpg" >
+    
+ 
+                      <script>
+                        function Aufgabe124() { 
+                                                
+                          if (Eintrag124.value=="-1") {alert("Richtig"); document.getElementById("Pruef124").disabled= true;
+                          }  
+                           
+                          else if (Eintrag124.value!=="-1" && Eintrag124.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag124").value="-1"; window.open('e-Funkt_Aufgabe124.html');           
+                          document.getElementById("Pruef124").disabled= true;}
+                               
+                          else if (Eintrag124.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 125-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 125
+
+y = 5 * x * e<sup>x</sup>             
+
+x     -2     1
+y           13,6  </strong>
+
+<img src="Aufgabe125.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe125.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 126-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 126
+
+y = (x - 2) * e<sup>x</sup>          
+
+x      <input type="text" id="Eintrag126" maxlength="3" size="1" style= background-color:yellow ></input>      1 
+y      -0,54     -2,7  </strong> 
+
+<button id="Pruef126" onclick="Aufgabe126()">Prüfen</button></p></pre>
+ 
+ <img src="Aufgabe126.jpg" >
+    
+ 
+                      <script>
+                        function Aufgabe126() { 
+                                                
+                          if (Eintrag126.value=="4,2") {alert("Richtig"); document.getElementById("Pruef126").disabled= true;
+                          }  
+                           
+                          else if (Eintrag126.value!=="4,2" && Eintrag126.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag126").value="4,2"; window.open('e-Funkt_Aufgabe126.html');           
+                          document.getElementById("Pruef126").disabled= true;}
+                               
+                          else if (Eintrag126.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+ <!--//Aufgabe 127-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 127
+
+y = 3 * x * e<sup>-x+1</sup>       
+
+x     -0,5           
+y     -6,7     3  </strong>   
+
+<img src="Aufgabe127.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe127.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 128-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 128
+
+"y = x * e-2x + 2         
+
+x     -1       3   
+y     -5,5   <input type="text" id="Eintrag128" maxlength="1" size="1" style= background-color:yellow ></input></strong>  
+
+<button id="Pruef128" onclick="Aufgabe128()">Prüfen</button></p></pre>
+
+<img src="Aufgabe128.jpg" >
+    
+ 
+                      <script>
+                        function Aufgabe128() { 
+                                                
+                          if (Eintrag128.value=="2") {alert("Richtig"); document.getElementById("Pruef128").disabled= true;
+                          }  
+                           
+                          else if (Eintrag128.value!=="2" && Eintrag128.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag128").value="2"; window.open('e-Funkt_Aufgabe128.html');           
+                          document.getElementById("Pruef128").disabled= true;}
+                               
+                          else if (Eintrag128.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 129-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 129
+
+y = 3 * e<sup>-x<sup>2</sup></sup>       
+
+x     -1                 
+y      1,1     3  </strong>
+
+<img src="Aufgabe129.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe129.html');" >Lösung</button></p></pre>   
+
+
+ <a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>
+        
+         
+
+        </body></html>     

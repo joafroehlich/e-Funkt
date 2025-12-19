@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exponential-, Potenz-, Logarithmus-, e- , Trigonometrische Funktionen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<pre><p class="Text1">Exponential-, Potenz-, Logarithmus-, 
+e- , Trigonometrische Funktionen
+<p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die 
+Schalter: Prüfen und Lösung.</span>
+<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es 
+oder starten Sie eine Lösung.</span></p></pre>
+
+    <p class="Aufgabe"><span style= "background-color:white;">Ergänzen Sie die Wertetabellen für die Graphen:</span></p> 
+     
+
+    <!--//Aufgabe 31--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 31
+
+y = x<sup>3</sup>     
+
+x     -2     0     2
+y     -8           8               </strong>
+
+<img src="Aufgabe31.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe31.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 32-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 32
+
+y = x<sup>4</sup>     
+
+x     -2     0   <input type="text" id="Eintrag32" maxlength="1" size="1" style= background-color:yellow ></input>           
+y     16     0     16 </strong>
+
+<button id="Pruef32" onclick="Aufgabe32()">Prüfen</button></p></pre>
+
+<img src="Aufgabe32.jpg" >
+    
+ 
+                      <script>
+                        function Aufgabe32() { 
+                                                
+                          if (Eintrag32.value=="2") {alert("Richtig"); document.getElementById("Pruef32").disabled= true;
+                          }  
+                           
+                          else if (Eintrag32.value!=="2" && Eintrag32.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag32").value="2"; window.open('e-Funkt_Aufgabe32.html');           
+                          document.getElementById("Pruef32").disabled= true;}
+                               
+                          else if (Eintrag32.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>  
+                      
+       <!--//Aufgabe 33--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 33
+
+y = x<sup>5</sup>     
+
+x     -1                   
+y     -1     0,00001               </strong> 
+
+<img src="Aufgabe33.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe33.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 34-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 34
+
+y = x<sup>6</sup>     
+
+x    -1   <input type="text" id="Eintrag34" maxlength="4" size="1" style= background-color:yellow ></input>             
+y     1     64 </strong>
+
+<button id="Pruef34" onclick="Aufgabe34()">Prüfen</button></p></pre>
+
+<img src="Aufgabe34.jpg" >
+     
+                      <script>
+                        function Aufgabe34() { 
+                                                
+                          if (Eintrag34.value=="2"||Eintrag34.value=="-2") {alert("Richtig"); document.getElementById("Pruef34").disabled= true;
+                          }  
+                           
+                          else if (Eintrag34.value!=="2" && Eintrag34.value=="-2" && Eintrag34.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag34").value="2,-2"; window.open('e-Funkt_Aufgabe34.html');           
+                          document.getElementById("Pruef34").disabled= true;}
+                               
+                          else if (Eintrag34.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 35--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 35
+
+y = -x<sup>3</sup>      
+
+x    -2     0               
+y     8     0     -8     </strong> 
+
+<img src="Aufgabe35.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe35.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 36-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 36
+
+y = -x<sup>4</sup>     
+
+x     -2     0     2
+y    <input type="text" id="Eintrag36" maxlength="3" size="1" style= background-color:yellow ></input>  0    -16 </strong>
+
+<button id="Pruef36" onclick="Aufgabe36()">Prüfen</button></p></pre>
+
+<img src="Aufgabe36.jpg" >
+    
+ 
+                      <script>
+                        function Aufgabe36() { 
+                                                
+                          if (Eintrag36.value=="-16") {alert("Richtig"); document.getElementById("Pruef36").disabled= true;
+                          }  
+                           
+                          else if (Eintrag36.value!=="-16" && Eintrag36.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag36").value="-16"; window.open('e-Funkt_Aufgabe36.html');           
+                          document.getElementById("Pruef36").disabled= true;}
+                               
+                          else if (Eintrag36.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 37--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 37
+
+y = -x<sup>5</sup>     
+
+x    -1                   
+y     1     -0,00001            </strong> 
+
+<img src="Aufgabe37.jpg" >  
+
+<button  onclick="window.open('e-Funkt_Aufgabe37.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 38-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 38
+
+y = -x<sup>6</sup>     
+
+x     -1    <input type="text" id="Eintrag38" maxlength="2" size="1" style= background-color:yellow ></input>            
+y     -1     -64   </strong>
+
+<button id="Pruef38" onclick="Aufgabe38()">Prüfen</button></p></pre>
+
+<img src="Aufgabe38.jpg" > 
+
+
+                      <script>
+                        function Aufgabe38() { 
+                                                
+                          if (Eintrag38.value=="2"||Eintrag38.value=="-2") {alert("Richtig"); document.getElementById("Pruef38").disabled= true;
+                          }  
+                           
+                          else if (Eintrag38.value!=="2" && Eintrag38.value=="-2"&& Eintrag38.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag38").value="2,-2"; window.open('e-Funkt_Aufgabe38.html');           
+                          document.getElementById("Pruef38").disabled= true;}
+                               
+                          else if (Eintrag38.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>  
+                      
+       <!--//Aufgabe 39--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 39
+
+y = x<sup>-3</sup>      
+
+x                1       
+y     -0,125     1    </strong>
+
+<img src="Aufgabe39.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe39.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 40-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 40
+
+y = x<sup>-4</sup>     
+
+x     -2     1 oder -1          
+y   <input type="text" id="Eintrag40" maxlength="6" size="2" style= background-color:yellow ></input>      1    </strong>
+
+<button id="Pruef40" onclick="Aufgabe40()">Prüfen</button></p></pre>
+
+<img src="Aufgabe40.jpg" > 
+     
+                      <script>
+                        function Aufgabe40() { 
+                                                
+                          if (Eintrag40.value=="0,0625") {alert("Richtig"); document.getElementById("Pruef40").disabled= true;
+                          }  
+                           
+                          else if (Eintrag40.value!=="0,0625" && Eintrag40.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag40").value="0,0625"; window.open('e-Funkt_Aufgabe40.html');           
+                          document.getElementById("Pruef40").disabled= true;}
+                               
+                          else if (Eintrag40.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 41--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 41
+
+y = x<sup>-5</sup>     
+
+x            1    
+y     -1     1 </strong> 
+
+<img src="Aufgabe41.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe41.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 42-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 42
+
+y = x<sup>-6</sup>     
+
+x     2 oder -2  <input type="text" id="Eintrag42" maxlength="2" size="1" style= background-color:yellow ></input>                 
+y     0,015625     1 </strong>
+
+<button id="Pruef42" onclick="Aufgabe42()">Prüfen</button></p></pre> 
+
+<img src="Aufgabe42.jpg" > 
+    
+ 
+                      <script>
+                        function Aufgabe42() { 
+                                                
+                          if (Eintrag42.value=="1"||Eintrag42.value=="-1") {alert("Richtig"); document.getElementById("Pruef42").disabled= true;
+                          }  
+                           
+                          else if (Eintrag42.value!=="1" && Eintrag42.value=="-1" && Eintrag42.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag42").value="1,-1"; window.open('e-Funkt_Aufgabe42.html');           
+                          document.getElementById("Pruef42").disabled= true;}
+                               
+                          else if (Eintrag42.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 43--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 43
+
+y = -x<sup>-3</sup>      
+
+x                 1
+y     0, 125     -1 </strong>
+
+<img src="Aufgabe43.jpg" >  
+
+<button  onclick="window.open('e-Funkt_Aufgabe43.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 44-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 44
+
+y = -x<sup>-4</sup>     
+
+x     -2     1 oder -1              
+y   <input type="text" id="Eintrag44" maxlength="6" size="2" style= background-color:yellow ></input>    -1 </strong>
+
+<button id="Pruef44" onclick="Aufgabe44()">Prüfen</button></p></pre> 
+
+<img src="Aufgabe44.jpg" > 
+
+
+    
+ 
+                      <script>
+                        function Aufgabe44() { 
+                                                
+                          if (Eintrag44.value=="-0,0625") {alert("Richtig"); document.getElementById("Pruef44").disabled= true;
+                          }  
+                           
+                          else if (Eintrag44.value!=="-0,0625" && Eintrag44.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag44").value="-0,0625"; window.open('e-Funkt_Aufgabe44.html');           
+                          document.getElementById("Pruef44").disabled= true;}
+                               
+                          else if (Eintrag44.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 45--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 45
+
+y = -x<sup>-5</sup>     
+
+x            1     
+y     1     -1 </strong>
+
+<img src="Aufgabe45.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe45.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 46-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 46
+
+y = -x<sup>-6</sup>      
+
+x      <input type="text" id="Eintrag46" maxlength="2" size="1" style= background-color:yellow ></input>    1 oder -1       
+y     -0,15625     -1 </strong>
+
+<button id="Pruef46" onclick="Aufgabe46()">Prüfen</button></p></pre> 
+
+<img src="Aufgabe46.jpg" > 
+    
+ 
+                      <script>
+                        function Aufgabe46() { 
+                                                
+                          if (Eintrag46.value=="2"||Eintrag46.value=="-2") {alert("Richtig"); document.getElementById("Pruef46").disabled= true;
+                          }  
+                           
+                          else if (Eintrag46.value!=="2" && Eintrag46.value!=="-2" && Eintrag46.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag46").value="28,1"; window.open('e-Funkt_Aufgabe46.html');           
+                          document.getElementById("Pruef46").disabled= true;}
+                               
+                          else if (Eintrag46.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 47--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 47
+
+y = (x + 1)<sup>3</sup>      
+
+x    -1                        
+y     0     1  </strong> 
+
+<img src="Aufgabe47.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe47.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 48-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 48
+
+y = (x - 2)<sup>4</sup>     
+
+x   <input type="text" id="Eintrag48" maxlength="1" size="1" style= background-color:yellow ></input>   3            
+y     0     1   </strong>
+
+<button id="Pruef48" onclick="Aufgabe48()">Prüfen</button></p></pre> 
+
+<img src="Aufgabe48.jpg" >
+    
+ 
+                      <script>
+                        function Aufgabe48() { 
+                                                
+                          if (Eintrag48.value=="2") {alert("Richtig"); document.getElementById("Pruef48").disabled= true;
+                          }  
+                           
+                          else if (Eintrag48.value!=="2" && Eintrag48.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag48").value="2"; window.open('e-Funkt_Aufgabe48.html');           
+                          document.getElementById("Pruef48").disabled= true;}
+                               
+                          else if (Eintrag48.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 49--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 49
+
+y = (x - 1)<sup>3</sup> + 2     
+
+x     0     2       
+y     1</strong>
+
+<img src="Aufgabe49.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe49.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 50-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 50
+
+y = (x + 2)<sup>4</sup> - 2      
+
+x     -2     0        
+y     -2   <input type="text" id="Eintrag50" maxlength="2" size="1" style= background-color:yellow ></input></strong>
+
+<button id="Pruef50" onclick="Aufgabe50()">Prüfen</button></p></pre> 
+
+<img src="Aufgabe50.jpg" >
+    
+ 
+                      <script>
+                        function Aufgabe50() { 
+                                                
+                          if (Eintrag50.value=="14") {alert("Richtig"); document.getElementById("Pruef50").disabled= true;
+                          }  
+                           
+                          else if (Eintrag50.value!=="14" && Eintrag50.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag50").value="14"; window.open('e-Funkt_Aufgabe50.html');           
+                          document.getElementById("Pruef50").disabled= true;}
+                               
+                          else if (Eintrag50.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 51--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 51
+
+y = x<sup>0,5</sup>          
+
+x     0
+y     0     2 </strong> 
+
+<img src="Aufgabe51.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe51.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 52-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 52
+
+y = x<sup>0,8</sup>          
+
+x   <input type="text" id="Eintrag52" maxlength="1" size="1" style= background-color:yellow ></input>     4     
+y     1     3,03  </strong>
+
+<button id="Pruef52" onclick="Aufgabe52()">Prüfen</button></p></pre>
+
+<img src="Aufgabe52.jpg" >    
+ 
+                      <script>
+                        function Aufgabe52() { 
+                                                
+                          if (Eintrag52.value=="1") {alert("Richtig"); document.getElementById("Pruef52").disabled= true;
+                          }  
+                           
+                          else if (Eintrag52.value!=="1" && Eintrag52.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag52").value="1"; window.open('e-Funkt_Aufgabe52.html');           
+                          document.getElementById("Pruef52").disabled= true;}
+                               
+                          else if (Eintrag52.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 53--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 53
+
+y = x<sup>1,2</sup>          
+
+x              5   
+y     2,3     6,9 </strong> 
+
+<img src="Aufgabe53.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe53.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 54-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 54
+
+y = x<sup>2,4</sup>          
+
+x      2    <input type="text" id="Eintrag54" maxlength="1" size="1" style= background-color:yellow ></input>         
+y     5,3     14 </strong>
+
+<button id="Pruef54" onclick="Aufgabe54()">Prüfen</button></p></pre>
+
+<img src="Aufgabe54.jpg" > 
+    
+ 
+                      <script>
+                        function Aufgabe54() { 
+                                                
+                          if (Eintrag54.value=="3") {alert("Richtig"); document.getElementById("Pruef54").disabled= true;
+                          }  
+                           
+                          else if (Eintrag54.value!=="3" && Eintrag54.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag54").value="3"; window.open('e-Funkt_Aufgabe54.html');           
+                          document.getElementById("Pruef54").disabled= true;}
+                               
+                          else if (Eintrag54.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 55--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 55
+
+y = -x<sup>0,5</sup>         
+
+x     0
+y     0     -2  </strong> 
+
+<img src="Aufgabe55.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe55.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 56-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 56
+
+y = -x<sup>0,8</sup>         
+
+x      1     4     
+y     -1   <input type="text" id="Eintrag56" maxlength="5" size="2" style= background-color:yellow ></input></strong>
+
+<button id="Pruef56" onclick="Aufgabe56()">Prüfen</button></p></pre>
+
+<img src="Aufgabe56.jpg" >  
+ 
+                      <script>
+                        function Aufgabe56() { 
+                                                
+                          if (Eintrag56.value=="-3,03") {alert("Richtig"); document.getElementById("Pruef56").disabled= true;
+                          }  
+                           
+                          else if (Eintrag56.value!=="-3,03" && Eintrag56.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag56").value="-3,03"; window.open('e-Funkt_Aufgabe56.html');           
+                          document.getElementById("Pruef56").disabled= true;}
+                               
+                          else if (Eintrag56.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+ <!--//Aufgabe 57-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 57
+
+y = -x<sup>1,2</sup>          
+
+x               5   
+y     -2,3     -6,9   </strong> 
+
+<img src="Aufgabe57.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe57.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 58-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 58
+
+y = -x<sup>2,4</sup>         
+
+x      2      <input type="text" id="Eintrag58" maxlength="1" size="1" style= background-color:yellow ></input>        
+y     -5,3     -14   </strong>
+
+<img src="Aufgabe58.jpg" > 
+
+<button id="Pruef58" onclick="Aufgabe58()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe58() { 
+                                                
+                          if (Eintrag58.value=="3") {alert("Richtig"); document.getElementById("Pruef58").disabled= true;
+                          }  
+                           
+                          else if (Eintrag58.value!=="3" && Eintrag58.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag58").value="3"; window.open('e-Funkt_Aufgabe58.html');           
+                          document.getElementById("Pruef58").disabled= true;}
+                               
+                          else if (Eintrag58.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 59-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 59
+
+y = x<sup>-0,5</sup>         
+
+x     1
+y     1     0,5  </strong> 
+
+<img src="Aufgabe59.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe59.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 60-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 60
+
+y = x<sup>-0,8</sup>         
+
+x    <input type="text" id="Eintrag60" maxlength="1" size="1" style= background-color:yellow ></input>     5      
+y     0,57     0,28  </strong>
+
+<button id="Pruef60" onclick="Aufgabe60()">Prüfen</button></p></pre> 
+
+<img src="Aufgabe60.jpg"> 
+    
+ 
+                      <script>
+                        function Aufgabe60() { 
+                                                
+                          if (Eintrag60.value=="2") {alert("Richtig"); document.getElementById("Pruef60").disabled= true;
+                          }  
+                           
+                          else if (Eintrag60.value!=="32" && Eintrag60.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag60").value="2"; window.open('e-Funkt_Aufgabe60.html');           
+                          document.getElementById("Pruef60").disabled= true;}
+                               
+                          else if (Eintrag60.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 61-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 61
+
+y = x<sup>-1,2</sup>          
+
+x     1    
+y     1     0,19 </strong> 
+
+<button  onclick="window.open('e-Funkt_Aufgabe61.html');" >Lösung</button></p></pre>
+
+<img src="Aufgabe61.jpg">
+
+<!--//Aufgabe 62-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 62
+
+x<sup>-2,4</sup>         
+
+x     0,5     5             
+y     5,3   <input type="text" id="Eintrag62" maxlength="4" size="1" style= background-color:yellow ></input></strong>
+
+<button id="Pruef62" onclick="Aufgabe62()">Prüfen</button></p></pre>
+
+<img src="Aufgabe62.jpg" > 
+    
+ 
+                      <script>
+                        function Aufgabe62() { 
+                                                
+                          if (Eintrag62.value=="0,02") {alert("Richtig"); document.getElementById("Pruef62").disabled= true;
+                          }  
+                           
+                          else if (Eintrag62.value!=="0,02" && Eintrag62.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag62").value="0,02"; window.open('e-Funkt_Aufgabe62.html');           
+                          document.getElementById("Pruef62").disabled= true;}
+                               
+                          else if (Eintrag62.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 63-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 63
+
+y = -x<sup>-0,5</sup>        
+
+x      1
+y     -1     -0,5   </strong> 
+
+<img src="Aufgabe63.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe63.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 64-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 64
+
+y = -x<sup>-0,8</sup>        
+
+x     <input type="text" id="Eintrag64" maxlength="1" size="1" style= background-color:yellow ></input>       5     
+y     -0,57     -0,28 </strong>
+
+<button id="Pruef64" onclick="Aufgabe64()">Prüfen</button></p></pre> 
+
+<img src="Aufgabe64.jpg" >
+    
+ 
+                      <script>
+                        function Aufgabe64() { 
+                                                
+                          if (Eintrag64.value=="2") {alert("Richtig"); document.getElementById("Pruef64").disabled= true;
+                          }  
+                           
+                          else if (Eintrag64.value!=="2" && Eintrag64.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag64").value="2"; window.open('e-Funkt_Aufgabe64.html');           
+                          document.getElementById("Pruef64").disabled= true;}
+                               
+                          else if (Eintrag64.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 65-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 65
+
+y = -x-1,2     
+
+x      1     4
+y     -1  </strong> 
+
+<button  onclick="window.open('e-Funkt_Aufgabe65.html');" >Lösung</button></p></pre>
+
+<img src="Aufgabe65.jpg" >
+
+<!--//Aufgabe 66-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 66
+
+y = -x<sup>-2,4</sup>      
+
+x      0,5     <input type="text" id="Eintrag66" maxlength="1" size="1" style= background-color:yellow ></input>     
+y     -5,3     -0,02</strong>
+
+<button id="Pruef66" onclick="Aufgabe66()">Prüfen</button></p></pre>
+ 
+<img src="Aufgabe66.jpg" >
+    
+ 
+                      <script>
+                        function Aufgabe66() { 
+                                                
+                          if (Eintrag66.value=="5") {alert("Richtig"); document.getElementById("Pruef66").disabled= true;
+                          }  
+                           
+                          else if (Eintrag66.value!=="5" && Eintrag66.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag66").value="5"; window.open('e-Funkt_Aufgabe66.html');           
+                          document.getElementById("Pruef66").disabled= true;}
+                               
+                          else if (Eintrag66.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 67-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 67
+
+y = 2*x0,5      
+
+x     0
+y     0     4   </strong> 
+
+<img src="Aufgabe67.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe67.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 68-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 68
+
+y = 3*x<sup>-0,8</sup>     
+
+x   <input type="text" id="Eintrag68" maxlength="1" size="1" style= background-color:yellow ></input>    4        
+y     3     0,99  </strong>
+
+<button id="Pruef68" onclick="Aufgabe68()">Prüfen</button></p></pre>
+
+<img src="Aufgabe68.jpg" >  
+    
+ 
+                      <script>
+                        function Aufgabe68() { 
+                                                
+                          if (Eintrag68.value=="1") {alert("Richtig"); document.getElementById("Pruef68").disabled= true;
+                          }  
+                           
+                          else if (Eintrag68.value!=="1" && Eintrag68.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag68").value="1"; window.open('e-Funkt_Aufgabe68.html');           
+                          document.getElementById("Pruef68").disabled= true;}
+                               
+                          else if (Eintrag68.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 69-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 69
+
+y = -2*x<sup>1,2</sup>      
+
+x      1                
+y     -2     -10,6  </strong> 
+
+<img src="Aufgabe69.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe69.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 70-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 70
+
+y = -3x-2,4       
+
+x      1     4        
+y     -3   <input type="text" id="Eintrag70" maxlength="4" size="1" style= background-color:yellow ></input> </strong>
+
+<button id="Pruef70" onclick="Aufgabe70()">Prüfen</button></p></pre> 
+
+<img src="Aufgabe70.jpg" > 
+   
+ 
+                      <script>
+                        function Aufgabe70() { 
+                                                
+                          if (Eintrag70.value=="-0,1") {alert("Richtig"); document.getElementById("Pruef70").disabled= true;
+                          }  
+                           
+                          else if (Eintrag70.value!=="-0,1" && Eintrag70.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag70").value="-0,1"; window.open('e-Funkt_Aufgabe70.html');           
+                          document.getElementById("Pruef70").disabled= true;}
+                               
+                          else if (Eintrag70.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 71-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 71
+
+Bestimmen Sie n so, dass eine Funktion der 
+Form y = x<sup>n</sup> durch den Punkt (2|8) geht. </strong> 
+
+<button  onclick="window.open('e-Funkt_Aufgabe71.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 72-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 72
+
+Bestimmen Sie n so, dass eine Funktion der 
+Form y = x<sup>n</sup> durch den Punkt (-1,5|5,0625) geht.   </strong>
+
+n = <input type="text" id="Eintrag72" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef72" onclick="Aufgabe72()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe72() { 
+                                                
+                          if (Eintrag72.value=="4") {alert("Richtig"); document.getElementById("Pruef72").disabled= true;
+                          }  
+                           
+                          else if (Eintrag72.value!=="4" && Eintrag72.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag72").value="4"; window.open('e-Funkt_Aufgabe72.html');           
+                          document.getElementById("Pruef72").disabled= true;}
+                               
+                          else if (Eintrag72.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 73-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 73
+
+Bestimmen Sie a und n so, dass eine Funktion 
+der Form y = a*x<sup>n</sup> durch die Punkte (2|8) und 
+(1|2) geht.  </strong> 
+
+<button  onclick="window.open('e-Funkt_Aufgabe73.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 74-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 74
+
+Bestimmen Sie a und n so, dass eine Funktion 
+der Form y = a*x<sup>n</sup> durch die Punkte (-3|24,3) 
+und (2|-3,2) geht. </strong>
+
+n = <input type="text" id="Eintrag74" maxlength="4" size="1" style= background-color:yellow ></input> m <button id="Pruef74" onclick="Aufgabe74()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe74() { 
+                                                
+                          if (Eintrag74.value=="-0,1") {alert("Richtig"); document.getElementById("Pruef74").disabled= true;
+                          }  
+                           
+                          else if (Eintrag74.value!=="-0,1" && Eintrag74.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag74").value="-0,1"; window.open('e-Funkt_Aufgabe74.html');           
+                          document.getElementById("Pruef74").disabled= true;}
+                               
+                          else if (Eintrag74.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
+        
+         
+
+        </body></html>

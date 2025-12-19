@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exponential-, Potenz-, Logarithmus-, e- , Trigonometrische Funktionen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Exponential-, Potenz-, Logarithmus-, <br>e- , Trigonometrische Funktionen</p> 
+
+    <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+    <p class="Aufgabe"><span style= "background-color:white;">Ergänzen Sie die Wertetabellen für die Graphen:</span></p>    
+        
+<!--//Aufgabe 1-->
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 1
+
+y = 2<sup>x</sup>     
+
+x       -3     -2     -1     0     1     2     3
+y     0,125           0,5    1     2     4     8  </strong>
+
+<img src="Aufgabe1.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe1.html');" >Lösung</button></pre></p>
+
+<!--//Aufgabe 2-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 2
+
+y = 3<sup>x</sup>     
+
+x   <input type="text" id="Eintrag2" maxlength="2" size="1" style= background-color:yellow ></input>  0     2 
+y    1/9    1     9     </strong>
+
+<button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe2() { 
+                                                
+                          if (Eintrag2.value=="-2") {alert("Richtig"); document.getElementById("Pruef2").disabled= true;
+                          }  
+                           
+                          else if (Eintrag2.value!=="-2" && Eintrag2.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag2").value="-2"; window.open('e-Funkt_Aufgabe2.html');           
+                          document.getElementById("Pruef2").disabled= true;}
+                               
+                          else if (Eintrag2.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+
+        <!--//Aufgabe 3-->                  
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 3
+
+y = 4<sup>x</sup>     
+
+x              0     1                    
+y     0,25     1     4 </strong>
+
+<img src="Aufgabe3.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe3.html');" >Lösung</button></pre></p>
+
+
+<!--//Aufgabe 4-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 4
+
+y = 0,2<sup>x</sup>     
+
+x     -3      0     1                
+y     125     1   <input type="text" id="Eintrag4" maxlength="3" size="1" style= background-color:yellow ></input> </strong> 
+
+<button id="Pruef4" onclick="Aufgabe4()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe4() { 
+                                                
+                          if (Eintrag4.value=="0,2") {alert("Richtig"); document.getElementById("Pruef4").disabled= true;
+                          }  
+                           
+                          else if (Eintrag4.value!=="0,2" && Eintrag4.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag4").value="0,2"; window.open('e-Funkt_Aufgabe4.html');           
+                          document.getElementById("Pruef4").disabled= true;}
+                               
+                          else if (Eintrag4.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+ <!--//Aufgabe 5-->  
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 5
+
+y = 0,4<sup>x</sup>     
+
+x               0      2 
+y      6,25     1     0,16   </strong> 
+
+<img src="Aufgabe5.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe5.html');">Lösung</button></pre></p>
+
+<!--//Aufgabe 6-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 6
+
+y = 0,8<sup>x</sup>     
+
+x    <input type="text" id="Eintrag6" maxlength="2" size="1" style= background-color:yellow ></input>    0       2      
+y     1,25     1     0,64 </strong>  
+
+<button id="Pruef6" onclick="Aufgabe6()">Prüfen</button> </p></pre>
+ 
+                      <script>
+                        function Aufgabe6() { 
+                                                
+                          if (Eintrag6.value=="-1") {alert("Richtig"); document.getElementById("Pruef6").disabled= true;
+                          }  
+                           
+                          else if (Eintrag6.value!=="-1" && Eintrag6.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag6").value="-1"; window.open('e-Funkt_Aufgabe6.html');           
+                          document.getElementById("Pruef6").disabled= true;}
+                               
+                          else if (Eintrag6.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+  <!--//Aufgabe 7-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 7
+
+y = 2<sup>x</sup> + 1      
+
+x      5     0     1
+y     33     2   </strong> 
+
+<img src="Aufgabe7.jpg" >
+ 
+<button  onclick="window.open('e-Funkt_Aufgabe7.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 8-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 8
+
+y = 2<sup>-x</sup>      
+
+x   <input type="text" id="Eintrag8" maxlength="2" size="1" style= background-color:yellow ></input>   0      2 
+y     32     1     0,25  </strong>
+
+<button id="Pruef8" onclick="Aufgabe8()">Prüfen</button></p></pre>
+     
+                      <script>
+                        function Aufgabe8() { 
+                                                
+                          if (Eintrag8.value=="-5") {alert("Richtig"); document.getElementById("Pruef8").disabled= true;
+                          }  
+                           
+                          else if (Eintrag8.value!=="-5" && Eintrag8.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag8").value="-5"; window.open('e-Funkt_Aufgabe8.html');           
+                          document.getElementById("Pruef8").disabled= true;}
+                               
+                          else if (Eintrag8.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+  <!--//Aufgabe 9-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 9
+
+y = -2<sup>-x</sup>     
+
+x     -4       0     2      
+y     -16     -1</strong>
+
+<img src="Aufgabe9.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe9.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 10-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 10
+
+y = 3 * 2<sup>x</sup>     
+
+x       -2     0     1
+y     0,75     3   </strong><input type="text" id="Eintrag10" maxlength="1" size="1" style= background-color:yellow ></input>          
+
+<button id="Pruef10" onclick="Aufgabe10()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe10() { 
+                                                
+                          if (Eintrag10.value=="6") {alert("Richtig"); document.getElementById("Pruef10").disabled= true;
+                          }  
+                           
+                          else if (Eintrag10.value!=="6" && Eintrag10.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag10").value="6"; window.open('e-Funkt_Aufgabe10.html');           
+                          document.getElementById("Pruef10").disabled= true;}
+                               
+                          else if (Eintrag10.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                                   
+
+ <!--//Aufgabe 11-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 11
+
+     1
+y = --- * 2<sup>x</sup> 
+     3
+
+x               0       2              
+y     1/12     1/3     1,33</strong> 
+
+<img src="Aufgabe11.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe11.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 12-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 12
+
+y = -3 * 2<sup>x</sup>     
+
+x     <input type="text" id="Eintrag12" maxlength="2" size="1" style= background-color:yellow ></input>     0       3      
+y     -0,75     -3     -24 </strong>
+
+<button id="Pruef12" onclick="Aufgabe12()">Prüfen</button></p></pre><nobr>
+
+ 
+                      <script>
+                        function Aufgabe12() { 
+                                                
+                          if (Eintrag12.value=="-2") {alert("Richtig"); document.getElementById("Pruef12").disabled= true;
+                          }  
+                           
+                          else if (Eintrag12.value!=="-2" && Eintrag12.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag12").value="-2"; window.open('e-Funkt_Aufgabe12.html');           
+                          document.getElementById("Pruef12").disabled= true;}
+                               
+                          else if (Eintrag12.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+              
+    <!--//Aufgabe 13--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 13
+
+y = 3<sup>x+2</sup>       
+
+x     -3      0     1
+y     1/3     9</strong>
+
+<img src="Aufgabe13.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe13.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 14-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 14
+
+y = 3<sup>x-1</sup>         
+
+x    <input type="text" id="Eintrag14" maxlength="2" size="1" style= background-color:yellow ></input>     0       2
+y     1/27     1/3      3 </strong>
+
+<button id="Pruef14" onclick="Aufgabe14()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe14() { 
+                                                
+                          if (Eintrag14.value=="-2") {alert("Richtig"); document.getElementById("Pruef14").disabled= true;
+                          }  
+                           
+                          else if (Eintrag14.value!=="-2" && Eintrag14.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag14").value="-2"; window.open('e-Funkt_Aufgabe14.html');           
+                          document.getElementById("Pruef14").disabled= true;}
+                               
+                          else if (Eintrag14.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+     <!--//Aufgabe 15--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 15
+
+y = -3<sup>-x-1</sup>      
+
+x              0        1      
+y     -9     -1/3     -0,11  </strong>
+
+<img src="Aufgabe15.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe15.html');" >Lösung</button></p></pre>
+
+<p class="Aufgabe"><span style= "background-color:white;">Wie lautet die Funktionsgleichung einer Funktion <br>der Form y = a<sup>x</sup>, wenn sie</span></p> 
+
+<!--//Aufgabe 16-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 16
+
+durch den Punkt (2|5) geht?    </strong>
+
+y = <input type="text" id="Eintrag16" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe16() { 
+                                                
+                          if (Eintrag16.value=="2,24") {alert("Richtig"); document.getElementById("Pruef16").disabled= true;
+                          }  
+                           
+                          else if (Eintrag16.value!=="2,24" && Eintrag16.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag16").value="2,24"; window.open('e-Funkt_Aufgabe16.html');           
+                          document.getElementById("Pruef16").disabled= true;}
+                               
+                          else if (Eintrag16.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 17--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 17
+
+durch den Punkt (-1|4) geht? </strong>
+
+<img src="Aufgabe17.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe17.html');" >Lösung</button></p></pre>
+
+<p class="Aufgabe"><span style= "background-color:white;">Wie lautet die Funktionsgleichung einer Funktion der<br> 
+Form y = q*a<sup>x</sup>, wenn sie durch die Punkte</span></p> 
+
+<!--//Aufgabe 18-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 18
+
+(2|45) und (4|405) geht?       </strong> 
+
+<input type="text" id="Eintrag18" maxlength="1" size="1" style= background-color:yellow ></input> * 3<sup>x</sup> <button id="Pruef18" onclick="Aufgabe18()">Prüfen</button></p></pre>
+    
+ 
+                      <script>
+                        function Aufgabe18() { 
+                                                
+                          if (Eintrag18.value=="5") {alert("Richtig"); document.getElementById("Pruef18").disabled= true;
+                          }  
+                           
+                          else if (Eintrag18.value!=="5" && Eintrag18.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag18").value="5"; window.open('e-Funkt_Aufgabe18.html');           
+                          document.getElementById("Pruef18").disabled= true;}
+                               
+                          else if (Eintrag18.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 19--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 19
+
+(5|-486) und (-4|-2/81) geht?    </strong>
+
+<img src="Aufgabe19.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe19.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 20-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 20
+
+(6|256/729) und (-3|13,5) geht?  </strong>   
+
+y = <input type="text" id="Eintrag20" maxlength="1" size="1" style= background-color:yellow ></input> * (2/3)<sup>x</sup> <button id="Pruef20" onclick="Aufgabe20()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe20() { 
+                                                
+                          if (Eintrag20.value=="4") {alert("Richtig"); document.getElementById("Pruef20").disabled= true;
+                          }  
+                           
+                          else if (Eintrag20.value!=="4" && Eintrag20.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag20").value="4"; window.open('e-Funkt_Aufgabe20.html');           
+                          document.getElementById("Pruef20").disabled= true;}
+                               
+                          else if (Eintrag20.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+         <!--//Aufgabe 21--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 21
+
+(2|6,144) und (-2|0,9375) geht?    </strong>
+
+<img src="Aufgabe21.jpg" >
+
+<button  onclick="window.open('e-Funkt_Aufgabe21.html');" >Lösung</button></p></pre>
+
+<p class="Aufgabe"><span style= "background-color:white;">Ermitteln Sie anhand der Wertetabellen die <br>
+Funktionsgleichung der dargestellten Funktion.</span></p>
+
+<!--//Aufgabe 22-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 22
+
+x       -4       -2        0      1       2       3       4       5     
+y    0,00625    0,025     0,1    0,2     0,4     0,8     1,6     3,2       </strong>
+
+y = 0,1 * <input type="text" id="Eintrag22" maxlength="1" size="1" style= background-color:yellow ></input><sup>x</sup> <button id="Pruef22" onclick="Aufgabe22()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe22() { 
+                                                
+                          if (Eintrag22.value=="2") {alert("Richtig"); document.getElementById("Pruef22").disabled= true;
+                          }  
+                           
+                          else if (Eintrag22.value!=="2" && Eintrag22.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag22").value="2"; window.open('e-Funkt_Aufgabe22.html');           
+                          document.getElementById("Pruef22").disabled= true;}
+                               
+                          else if (Eintrag22.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+             <!--//Aufgabe 23--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 23
+
+x     -5         -3        -1     0      1         3            5 
+y  100 000a    1 000a     10a     a     0,1a     0,001a     0,000 01a   </strong> 
+
+<button  onclick="window.open('e-Funkt_Aufgabe23.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 24-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 24
+
+Ermitteln Sie zu den dargestellten Funktionen der 
+Form y = a<sup>x</sup> das a. 
+
+<img src="Aufgabe24.jpg" >
+
+1: a = 2, 2: a = 3, 3: a = 4, </strong>4: a = <input type="text" id="Eintrag24" maxlength="4" size="1" style= background-color:yellow ></input><strong>, 5: a = 0,5.</strong>
+
+<button id="Pruef24" onclick="Aufgabe24()">Prüfen</button></p></pre>
+    
+ 
+                      <script>
+                        function Aufgabe24() { 
+                                                
+                          if (Eintrag24.value=="") {alert("Richtig"); document.getElementById("Pruef24").disabled= true;
+                          }  
+                           
+                          else if (Eintrag24.value!=="0,25" && Eintrag24.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag24").value="0,25"; window.open('e-Funkt_Aufgabe24.html');           
+                          document.getElementById("Pruef24").disabled= true;}
+                               
+                          else if (Eintrag24.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+   <!--//Aufgabe 25--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 25
+
+Wie lautet die zugehörige Funktionsgleichung? </strong> 
+
+<img src="Aufgabe25.jpg" > 
+
+<button  onclick="window.open('e-Funkt_Aufgabe25.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 26-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 26
+
+Um wie viel muss man x in der Funktion y = 3<sup>x</sup> 
+vergrößern, damit sich der Funktionswert y verdoppelt? </strong>
+
+Um <input type="text" id="Eintrag26" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef26" onclick="Aufgabe26()">Prüfen</button></p></pre>
+     
+                      <script>
+                        function Aufgabe26() { 
+                                                
+                          if (Eintrag26.value=="0,63") {alert("Richtig"); document.getElementById("Pruef26").disabled= true;
+                          }  
+                           
+                          else if (Eintrag26.value!=="0,63" && Eintrag26.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag26").value="0,63"; window.open('e-Funkt_Aufgabe26.html');           
+                          document.getElementById("Pruef26").disabled= true;}
+                               
+                          else if (Eintrag26.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                   
+                      
+     <!--//Aufgabe 27--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 27
+
+Um wie viel muss man x in der Funktion y = (1/3)<sup>x</sup> 
+vergrößern, damit sich der Funktionswert y halbiert?  </strong> 
+
+<button  onclick="window.open('e-Funkt_Aufgabe27.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 28-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 28
+
+Die Wertetabelle stellt das Wachstum einer Pflanze 
+dar, wobei x die Zeit in Stunden und y die Fläche 
+in cm² angibt, die die Pflanze bedeckt. 
+x    -2     -1     0     0,5     1     2    
+y   0,11   0,33    1    1,73     3     9 
+Wie lautet die Funktionsgleichung?  </strong>
+
+y = <input type="text" id="Eintrag28" maxlength="1" size="1" style= background-color:yellow ></input><sup>x</sup> <button id="Pruef28" onclick="Aufgabe28()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe28() { 
+                                                
+                          if (Eintrag28.value=="3") {alert("Richtig"); document.getElementById("Pruef28").disabled= true;
+                          }  
+                           
+                          else if (Eintrag28.value!=="3" && Eintrag28.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag28").value="3"; window.open('e-Funkt_Aufgabe28.html');           
+                          document.getElementById("Pruef28").disabled= true;}
+                               
+                          else if (Eintrag28.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 29--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 29
+
+Die Halbwertszeit einer radioaktiven Substanz 
+beträgt 3 Tage. Wie lautet die Zerfallsfunktion, 
+wenn zu Beginn1 mg der Substanz vorhanden ist?    </strong> 
+
+<button  onclick="window.open('e-Funkt_Aufgabe29.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 30-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 30
+
+Ein Gegenstand kommt mit einer Temperatur von 
+6° Celsius in einen Raum mit 21° Celsius. Der 
+Gegenstanderwärmt sich so, dass sich der 
+Temperaturunterschied jede Minute auf 4/10 des 
+Ausgangswertes verringert.Wie lautet die 
+Funktionsgleichung dieses Prozesses?  </strong>
+
+y = <input type="text" id="Eintrag30" maxlength="2" size="1" style= background-color:yellow ></input> * 0,4<sup>n</sup> <button id="Pruef30" onclick="Aufgabe30()">Prüfen</button></p></pre>
+     
+                      <script>
+                        function Aufgabe30() { 
+                                                
+                          if (Eintrag30.value=="9,2") {alert("Richtig"); document.getElementById("Pruef30").disabled= true;
+                          }  
+                           
+                          else if (Eintrag30.value!=="9,2" && Eintrag30.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag30").value="9,2"; window.open('e-Funkt_Aufgabe30.html');           
+                          document.getElementById("Pruef30").disabled= true;}
+                               
+                          else if (Eintrag30.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                      
+                      
+       
+
+<a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
+        
+         
+
+        </body></html>
+
+                      
+                    
