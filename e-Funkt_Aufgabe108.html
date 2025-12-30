@@ -1,0 +1,84 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exponential-, Potenz-, Logarithmus-, e- , Trigonometrische Funktionen</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+<pre><p class ="Aufgabe"><b>Aufgabe 108
+
+Ergänzen Sie die Wertetabelle für den Graphen: 
+ 
+      1 + ln x  
+y = -------------               
+         x      
+ 
+x     <span style="color:red;">1</span>     6 
+y     1     0,5          
+ 
+            1 + ln 6      1 + 1,8      2,8     
+y = f<sub>(6)</sub> = ---------- =  ---------- = ----- = 0,5 gerundet  
+               6             6          6
+               
+<img src="Aufgabe108a.jpg">
+ 
+An welchen Stellen x die Funktion den Wert 1 
+annimmt, ist elementar nicht zu ermitteln. 
+Abgelesen: Es ist wahrscheinlich nur eine Stelle.  
+ 
+Zur Berechnung wendet man ein Näherungs-
+verfahren an, hier die Regula falsi. 
+ 
+f<sub>(x)</sub> = 1 eingesetzt: 
+  
+     1 + ln x   
+1 = -----------  |*x 
+        x 
+ 
+x = 1 + ln x |-x 
+ 
+ln x - x + 1 = 0 
+ 
+Als Funktion: y = ln x - x + 1
+
+Die Nullstellen dieser Funktion (y = 0) entsprechen 
+den gesuchten Werten für x. 
+
+<img src="Aufgabe108b.jpg">
+
+Abgelesen: Nullstellen zwischen 0,9 und 1,1. 
+
+Regula falsi: x<sub>0</sub> = gesuchte Nullstelle 
+
+       x<sub>1</sub> * |y<sub>(x<sub>2</sub>)</sub>| + x<sub>2</sub> * |y<sub>(x<sub>1</sub>)</sub>|    
+x<sub>0</sub>  = ------------------------------ 
+             |y<sub>(x<sub>1</sub>)</sub>| + |y<sub>(x<sub>2</sub>)</sub>| 
+
+Nullstelle x<sub>0</sub> zwischen 0,9 und 1,1 mit Excel ermittelt: 
+
+A	B	C	D	E	F	G	H	I	J
+0,9	1,1	0,0047	0,0054	0,0042	0,0059	0,0101	0,0101	1,0067	-0,000022
+0,9	1,0067	0,0000	0,0054	0,0000	0,0054	0,0054	0,0054	1,0062	-0,000019
+0,9	1,0062	0,0000	0,0054	0,0000	0,0054	0,0054	0,0054	1,0059	-0,000017
+0,9	1,0059	0,0000	0,0054	0,0000	0,0054	0,0054	0,0054	1,0055	-0,000015
+0,9	1,0055	0,0000	0,0054	0,0000	0,0054	0,0054	0,0054	1,0052	-0,000014
+0,9	1,0052	0,0000	0,0054	0,0000	0,0054	0,0054	0,0054	1,0050	-0,000012
+
+Erläuterungen zur Tabelle siehe Aufgabe 101. 
+
+Die gesuchte Nullstelle ergibt sich nach mehreren 
+Näherungen mit ausreichender Genauigkeit zu x<sub>1</sub> = 1 gerundet.
+
+        1 + ln1     1 + 0
+f<sub>(1)</sub> = --------- = ------- = 1
+          1           1
+</b></p></pre>

@@ -1,0 +1,85 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exponential-, Potenz-, Logarithmus-, e- , Trigonometrische Funktionen</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+<pre><p class ="Aufgabe"><b>Aufgabe 103
+
+Ergänzen Sie die Wertetabelle für den Graphen: 
+
+y = 5 * x<sup>3</sup> * ln x    
+
+x     0,5     <span style="color:red;">1,5</span>            
+y    -0,43    6,8  
+        
+y = f<sub>(0,5)</sub> = 5 * 0,5<sup>3</sup> * ln  0,5 = -0,43  
+
+<img src="Aufgabe103a.jpg"> 
+
+An welchen Stellen x die Funktion den 
+Wert 6,8 annimmt, ist elementar  nicht 
+zu ermitteln. Abgelesen: Es ist 1 Stelle. 
+
+Zur Berechnung wendet man ein Näherungs-
+verfahren an, hier die Regula falsi.  
+
+f<sub>(x)</sub> = 6,8 eingesetzt : 
+
+6,8 = 5 * x<sup>3</sup> * ln x |:x<sup>3</sup> 
+
+ 6,8                 6,8    
+----- = 5 * ln x |- ----- 
+ x<sup>3</sup>                   x<sup>3</sup>       
+ 
+            6,8      
+5 * ln x - ----- = 0 
+             x<sup>3</sup>       
+ 
+                              6,8   
+Als Funktion: y = 5 * ln x - ----- 
+                               x<sup>3</sup>  
+
+Die Nullstellen dieser Funktion (y = 0) 
+entsprechen den gesuchten Werten für x.  
+
+<img src="Aufgabe103b.jpg">
+
+Abgelesen: Nullstelle zwischen 1,4 und 1,6 
+(Vorzeichenwechsel für f<sub>(x)</sub>) 
+ 
+Regula falsi: x<sup>0</sup> = gesuchte Nullstelle 
+ 
+        x<sub>1</sub> * |y<sub>(x<sub>2</sub>)</sub>| + x<sub>2</sub> * |y<sub>(x<sub>1</sub>)</sub>|    
+x<sub>0</sub>  = ------------------------------ 
+             |y<sub>(x<sub>1</sub>)</sub>| + |y<sub>(x<sub>2</sub>)</sub>| 
+ 
+Nullstelle x<sub>0</sub> zwischen 1,4 und 1,6 mit Excel ermittelt:
+
+A	B	C	D	E	F	G	H	I	J
+1,4	1,6	0,6899	0,7958	0,9658	1,2732	2,2390	1,4856	1,5071	0,0647
+1,4	1,5071	0,0647	0,7958	0,0905	1,1993	1,2899	0,8604	1,4991	0,0057
+1,4	1,4991	0,0057	0,7958	0,0080	1,1929	1,2009	0,8015	1,4984	0,0005
+1,4	1,4984	0,0005	0,7958	0,0007	1,1924	1,1931	0,7963	1,4983	0,0000
+1,4	1,4983	0,0000	0,7958	0,0001	1,1923	1,1924	0,7958	1,4983	0,0000
+1,4	1,4983	0,0000	0,7958	0,0000	1,1923	1,1923	0,7958	1,4983	0,0000
+ 
+Die gesuchte Nullstelle ergibt sich nach mehreren 
+Näherungen mit ausreichender Genauigkeit zu 
+x<sub>0</sub> = 1,5 gerundet.
+
+Erläuterungen zur Tabelle siehe Aufgabe 101. 
+
+
+
+</b></p></pre>

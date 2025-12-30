@@ -1,0 +1,71 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exponential-, Potenz-, Logarithmus-, e- , Trigonometrische Funktionen</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+
+<pre><p class ="Aufgabe"><b>Aufgabe 124
+
+Ergänzen Sie die Wertetabelle für den Graphen: 
+ 
+y = e * x + e<sup>-x</sup>           
+ 
+x     <span style="color:red;">-1</span>     2 
+y      0     5,6          
+ 
+                                  1        
+y = f<sub>(2)</sub> = e * 2 + e<sup>-2</sup>                                     
+                                  
+              1                    
+y = e * 2 + ---- = 5,6 gerundet 
+             e<sup>2</sup>                      
+
+<img src="Aufgabe124a.jpg">
+
+An welchen Stellen x die Funktion den Wert 0
+annimmt, ist elementar nicht zu ermitteln. 
+Abgelesen: Es ist eine Stelle.  
+
+f<sub>x</sub> = 0 eingesetzt: 
+
+0 = e * x + e<sup>-x</sup>  
+
+Regula falsi:
+
+x<sub>0</sub> = gesuchte Nullstelle 
+ 
+       x<sub>1</sub> * |y<sub>(x<sub>2</sub>)</sub>| + x<sub>2</sub> * |y<sub>(x<sub>1</sub>)</sub>|    
+x<sub>0</sub>  = ------------------------------ 
+             |y<sub>(x<sub>1</sub>)</sub>| + |y<sub>(x<sub>2</sub>)</sub>|
+
+Abgelesen: Nullstelle zwischen -1,1 und -0,9. 
+
+(Durch Probieren ermittelt: e * (-1) + e<sup>-(-1)</sup> = -e + e = 0, 
+d. h. Nullstelle  bei x = -1) 
+
+Nullstelle x<sub>0</sub> zwischen -1,1 und -0,9 mit Excel ermittelt:
+
+A	B	C	D	E	F	G	H	I	J
+-1,1	-0,9	0,0132	0,0140	-0,0145	-0,0126	-0,0271	0,0272	-0,9969	0,00001
+-1,1	-0,9969	0,0000	0,0140	0,0000	-0,0140	-0,0140	0,0140	-0,9970	0,00001
+-1,1	-0,9970	0,0000	0,0140	0,0000	-0,0140	-0,0140	0,0140	-0,9971	0,00001
+-1,1	-0,9971	0,0000	0,0140	0,0000	-0,0140	-0,0140	0,0140	-0,9972	0,00001
+
+Die gesuchte Nullstelle ergibt sich nach 
+mehreren Näherungen mit ausreichender Genauigkeit 
+zu x<sub>0</sub> = -1 gerundet. 
+
+Weitere Erläuterungen zur Tabelle siehe Aufgabe 101. 
+
+</b></p></pre>
