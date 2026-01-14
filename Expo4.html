@@ -8,7 +8,7 @@
   <title>Exponential-, Potenz-, Logarithmus-, e- , Trigonometrische Funktionen</title>
   
 </head>
-<body style="background-color: #B9D1EA;">
+<body style="background-color:white;">
 
     <style> 
         .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
@@ -89,8 +89,8 @@ y     -e     4,3 </strong>
 
 y = √x * e<sup>-x</sup>          
 
-x     1     0,01 oder 2,95      
-y   <input type="text" id="Eintrag112" maxlength="3" size="1" style= background-color:yellow ></input>      0,09 </strong> 
+x     1     <input type="text" id="Eintrag112" maxlength="4" size="1" style= background-color:yellow ></input>      
+y    0,4     0,09</strong>
 
 <button id="Pruef112" onclick="Aufgabe112()">Prüfen</button></p></pre>
 
@@ -99,10 +99,10 @@ y   <input type="text" id="Eintrag112" maxlength="3" size="1" style= background-
                        <script>
                         function Aufgabe112() { 
                                                 
-                          if (Eintrag112.value=="0,4") {alert("Richtig"); document.getElementById("Pruef112").disabled= true;
+                          if (Eintrag112.value=="0,01"||Eintrag112.value=="2,95") {alert("Richtig"); document.getElementById("Pruef112").disabled= true;
                           }  
                            
-                          else if (Eintrag112.value!=="0,4" && Eintrag112.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag112").value="0,4"; window.open('e-Funkt_Aufgabe112.html');           
+                          else if (Eintrag112.value!=="0,01" && Eintrag112.value!=="2,95" && Eintrag112.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag112").value="0,01;2,95"; window.open('e-Funkt_Aufgabe112.html');           
                           document.getElementById("Pruef112").disabled= true;}
                                
                           else if (Eintrag112.value=="") {alert("Bitte eine Eingabe machen")}}
@@ -299,10 +299,10 @@ y     1,7     3</strong>
                       <script>
                         function Aufgabe122() { 
                                                 
-                          if (Eintrag122.value=="-2,4") {alert("Richtig"); document.getElementById("Pruef122").disabled= true;
+                          if (Eintrag122.value=="-2,4"||Eintrag122.value=="-3") {alert("Richtig"); document.getElementById("Pruef122").disabled= true;
                           }  
                            
-                          else if (Eintrag122.value!=="-2,4" && Eintrag122.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag122").value="-2,4"; window.open('e-Funkt_Aufgabe122.html');           
+                          else if (Eintrag122.value!=="-2,4" && Eintrag122.value!=="3" && Eintrag122.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag122").value="-2,4;3"; window.open('e-Funkt_Aufgabe122.html');           
                           document.getElementById("Pruef122").disabled= true;}
                                
                           else if (Eintrag122.value=="") {alert("Bitte eine Eingabe machen")}}
@@ -316,7 +316,7 @@ y     1,7     3</strong>
 y = e<sup>x</sup> + e<sup>-x</sup>       
 
 x     -1                 
-y     3,1     7,5?   </strong>   
+y     3,1     7,5   </strong>   
 
 <img src="Aufgabe123.jpg" > 
 
@@ -379,10 +379,10 @@ y      -0,54     -2,7  </strong>
                       <script>
                         function Aufgabe126() { 
                                                 
-                          if (Eintrag126.value=="4,2") {alert("Richtig"); document.getElementById("Pruef126").disabled= true;
+                          if (Eintrag126.value=="1,9"||Eintrag126.value=="-2") {alert("Richtig"); document.getElementById("Pruef126").disabled= true;
                           }  
                            
-                          else if (Eintrag126.value!=="4,2" && Eintrag126.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag126").value="4,2"; window.open('e-Funkt_Aufgabe126.html');           
+                          else if (Eintrag126.value!=="1,9" && Eintrag126.value!=="-2" && Eintrag126.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag126").value="-2;1,9"; window.open('e-Funkt_Aufgabe126.html');           
                           document.getElementById("Pruef126").disabled= true;}
                                
                           else if (Eintrag126.value=="") {alert("Bitte eine Eingabe machen")}}
