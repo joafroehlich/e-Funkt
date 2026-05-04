@@ -37,7 +37,7 @@ y = 2<sup>x</sup>
 x       -3     -2     -1     0     1     2     3
 y     0,125           0,5    1     2     4     8  
 
-<img src="Aufgabe1.jpg" >
+<img src="Aufgabe1a.jpg" >
 
 <button  onclick="window.open('e-Funkt_Aufgabe1.html');" >Lösung</button></pre></p>
 
@@ -223,7 +223,7 @@ y     0,75     3   <input type="text" id="Eintrag10" maxlength="1" size="1" styl
 y = --- * 2<sup>x</sup> 
      3
 
-x               0       2              
+x               0       2
 y     1/12     1/3     1,33 
 
 <img src="Aufgabe11.jpg" >
@@ -412,8 +412,11 @@ Funktionsgleichung der dargestellten Funktion.</span></p>
 
   <pre><p class ="Aufgabe" >Aufgabe 22
 
-x       -4       -2        0      1       2       3       4       5     
-y    0,00625    0,025     0,1    0,2     0,4     0,8     1,6     3,2       
+x       -4       -2        0      1       2
+y    0,00625    0,025     0,1    0,2     0,4
+
+x     3       4       5
+y     0,8     1,6     3,2       
 
 y = 0,1 * <input type="text" id="Eintrag22" maxlength="1" size="1" style= background-color:yellow ></input><sup>x</sup> <button id="Pruef22" onclick="Aufgabe22()">Prüfen</button></p></pre>
  
@@ -434,8 +437,11 @@ y = 0,1 * <input type="text" id="Eintrag22" maxlength="1" size="1" style= backgr
                       
     <pre><p class="Aufgabe">Aufgabe 23
 
-x     -5         -3        -1     0      1         3            5 
-y  100 000a    1 000a     10a     a     0,1a     0,001a     0,000 01a    
+x     -5         -3        -1     0      1
+y  100 000a    1 000a     10a     a     0,1a
+
+x    3            5
+y 0,001a     0,000 01a    
 
 <button  onclick="window.open('e-Funkt_Aufgabe23.html');" >Lösung</button></p></pre>
 
@@ -456,7 +462,7 @@ Form y = a<sup>x</sup> das a.
                       <script>
                         function Aufgabe24() { 
                                                 
-                          if (Eintrag24.value=="") {alert("Richtig"); document.getElementById("Pruef24").disabled= true;
+                          if (Eintrag24.value=="0,25") {alert("Richtig"); document.getElementById("Pruef24").disabled= true;
                           }  
                            
                           else if (Eintrag24.value!=="0,25" && Eintrag24.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag24").value="0,25"; window.open('e-Funkt_Aufgabe24.html');           
@@ -481,7 +487,8 @@ Wie lautet die zugehörige Funktionsgleichung?
   <pre><p class ="Aufgabe" >Aufgabe 26
 
 Um wie viel muss man x in der Funktion y = 3<sup>x</sup> 
-vergrößern, damit sich der Funktionswert y verdoppelt? 
+vergrößern, damit sich der Funktionswert y 
+verdoppelt? 
 
 Um <input type="text" id="Eintrag26" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef26" onclick="Aufgabe26()">Prüfen</button></p></pre>
      
@@ -503,7 +510,8 @@ Um <input type="text" id="Eintrag26" maxlength="4" size="1" style= background-co
     <pre><p class="Aufgabe">Aufgabe 27
 
 Um wie viel muss man x in der Funktion y = (1/3)<sup>x</sup> 
-vergrößern, damit sich der Funktionswert y halbiert?   
+vergrößern, damit sich der Funktionswert y 
+halbiert?   
 
 <button  onclick="window.open('e-Funkt_Aufgabe27.html');" >Lösung</button></p></pre>
 
@@ -511,11 +519,12 @@ vergrößern, damit sich der Funktionswert y halbiert?
 
   <pre><p class ="Aufgabe" >Aufgabe 28
 
-Die Wertetabelle stellt das Wachstum einer Pflanze 
-dar, wobei x die Zeit in Stunden und y die Fläche 
-in cm² angibt, die die Pflanze bedeckt. 
-x    -2     -1     0     0,5     1     2    
-y   0,11   0,33    1    1,73     3     9 
+Die Wertetabelle stellt das Wachstum einer 
+Pflanze dar, wobei x die Zeit in Stunden und y 
+die Fläche in cm² angibt, die die Pflanze 
+bedeckt. 
+x    -2     -1     0     0,5     1     2
+y   0,11   0,33    1    1,73     3     9
 Wie lautet die Funktionsgleichung?  
 
 y = <input type="text" id="Eintrag28" maxlength="1" size="1" style= background-color:yellow ></input><sup>x</sup> <button id="Pruef28" onclick="Aufgabe28()">Prüfen</button></p></pre>
@@ -539,7 +548,7 @@ y = <input type="text" id="Eintrag28" maxlength="1" size="1" style= background-c
 
 Die Halbwertszeit einer radioaktiven Substanz 
 beträgt 3 Tage. Wie lautet die Zerfallsfunktion, 
-wenn zu Beginn1 mg der Substanz vorhanden ist?     
+wenn zu Beginn1 mg der Substanz vorhanden ist?
 
 <button  onclick="window.open('e-Funkt_Aufgabe29.html');" >Lösung</button></p></pre>
 
