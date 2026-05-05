@@ -4,6 +4,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exponential-, Potenz-, Logarithmus-, e- , Trigonometrische Funktionen</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
   
 </head>
 <body style="background-color:white;; margin-top: 1em; ">
@@ -16,9 +20,54 @@
     
 <pre><p class ="Aufgabe">Aufgabe 19
 
-<img src="Aufgabe19a.jpg">
+Wie lautet die Funktionsgleichung einer Funktion 
+der Form y = q*a<sup>x</sup>, wenn sie durch die Punkte 
+(5|-486) und (-4|-2/81) geht?  
+
+y = q * a<sup>x</sup>    
+
+x<sub>1</sub> = 5 , y<sub>1</sub> = -486
+
+x<sub>2</sub> = -4 , y<sub>2</sub> = - 2/81
+
+eingesetzt :
+
+-486 = q * a<sup>5</sup>    (1)
+
+- 2/81 = q * a<sup>-4</sup>    (2)
+
+Aus (2) :
+
+              1  
+- 2/81 = q * ----  | *a<sup>4</sup>
+              a<sup>4</sup>  
+
+        2  
+q = - ---- * a<sup>4</sup>
+       81  
+
+In (1) eingesetzt :
+
+          2 
+-486 = - ---- * a<sup>4</sup> * a<sup>5</sup> | *81
+          81    
+
+- 39 366 = - 2 * a<sup>9</sup> | :(-2)
+
+a<sup>9</sup> = 19 683 
+
+a = <math mathsize="0.9em"><mroot><mn>19683</mn><mn>9</mn></mroot></math> = 3
+
+In (1) eingesetzt:
+
+-486 = q * 3<sup>5</sup>
+
+-486 = q * 243 |:243
+
+q = -2
+
+<span style="color:red;">y = -2 * 3<sup>x</sup></span>
 
 <img src="Aufgabe19b.jpg">
-
 
 </p></pre>

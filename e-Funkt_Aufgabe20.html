@@ -4,6 +4,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exponential-, Potenz-, Logarithmus-, e- , Trigonometrische Funktionen</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
   
 </head>
 <body style="background-color:white;; margin-top: 1em; ">
@@ -15,13 +19,85 @@
         
     </style>
     
-<pre><p class ="Aufgabe"><strong>Aufgabe 20</strong>
+<pre><b><p class ="Aufgabe">Aufgabe 20
 
-<img src="Aufgabe20a.jpg">
+Wie lautet die Funktionsgleichung einer Funktion 
+der Form y = q*ax, wenn sie durch die Punkte 
+(6|256/729) und (-3|13,5) geht?     
 
-<img src="Aufgabe20b.jpg">
+y = q * a<sup>x</sup>   
 
+               256
+x1 = 6 , y1 = -----
+               729   
+
+x2 = -3 , y2 = 13,5
+
+eingesetzt :
+
+ 256
+----- = q * a<sup>6</sup>    (1)
+ 729
+
+13,5 = q * a<sup>-3</sup>    (2)
+
+Aus (2) :
+
+13,5 = q * a<sup>-3</sup>  
+
+         q  
+13,5 = ---- | *a<sup>3</sup>
+        a<sup>3</sup> 
+
+q = 13,5 * a<sup>3</sup>
+
+In (1) eingesetzt :
+
+256
+----- = 13,5 * a<sup>3</sup> * a<sup>6</sup>    
+729
+
+256      27           2   
+----- = ---- * a<sup>9</sup> | *----   
+729       2           27 
+
+   256 * 2
+------------ = a<sup>9</sup>    
+  729 * 27
+
+  28 * 2
+---------- = a<sup>9</sup>    
+ 36 * 33
+
+  2<sup>9</sup> 
+----- = a<sup>9</sup>    
+  3<sup>9</sup>
+
+a = <math mathsize="1.2em"><mroot><mfrac><mrow><msup><mn>2</mn><mn>9</mn></msup></mrow><mrow><msup><mn>3</mn><mn>9</mn></msup></mrow></mfrac><mn>9</mn></mroot></math>          
+
+Eingesetzt in (2) :
+
+             2 
+13,5 = q * (---)<sup>-3</sup>
+             3  
+
+            2<sup>-3</sup> 
+13,5 = q * ----
+            3<sup>-3</sup>    
+
+            3<sup>3</sup>         27 
+13,5 = q * ---- = q * ---- | *8
+            2<sup>3</sup>          8 
+
+108 = q * 27 | :27
+
+q = 4
+
+          <span style="color:red;">2 
+y = 4 * (---)<sup>x</sup>
+          3</span> 
+ 
 <img src="Aufgabe20c.jpg">
 
 
-</p></pre>
+</p></b></pre>
