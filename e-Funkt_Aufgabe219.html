@@ -4,6 +4,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exponential-, Potenz-, Logarithmus-, e- , Trigonometrische Funktionen</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
   
 </head>
 <body style="background-color:white;; margin-top: 1em; ">
@@ -17,7 +21,8 @@
 
 <pre><p class ="Aufgabe"><b>Aufgabe 219
 
-Ergänzen Sie die Wertetabelle für x zwischen 0 und 2π:
+Ergänzen Sie die Wertetabelle für x zwischen 
+0 und 2π:
 
 y = 3 sin x - 4 cos x    
 
@@ -50,7 +55,9 @@ x = arc tan --- = 0,93
      
 x<sub>1</sub> = 0,93 gerundet oder 53,3°. 
  
-x<sub>2</sub> = (π + 0,927) = 4,06 (4,1 gerundet) oder 234,9° 
+x<sub>2</sub> = (π + 0,927) = 
+
+= 4,06 (4,1 gerundet) oder 234,9° 
 
 Berechnung der Amplitude A: 
  
@@ -81,16 +88,26 @@ y = f<sub>(2)</sub> = 3 sin 2 - 4 cos 2 =
 <span style="color:red">Berechnung der x-Werte für y = f<sub>(x)</sub> = 1</span>
 
 f<sub>(x)</sub> = 1 eingesetzt, existiert zwischen 0 und π 
-bzw. 0° und 180° und zwischen π und 2π bzw. 180° und 360° 
-(siehe Graph). 
+bzw. 0° und 180° und zwischen π und 2π bzw. 180° 
+und 360° (siehe Graph). 
 
 1 = 3 sin x - 4 cos x
+
+cos x = <math mathsize="0.9em"><msqrt><mrow><mtext>1&#x2212;</mtext><msup><mtext>sin</mtext><mtext>2</mtext></msup><mtext>x</mtext></mrow></msqrt></math> 
+
+1 = 3sin x - 4*<math mathsize="0.9em"><msqrt><mrow><mtext>1&#x2212;</mtext><msup><mtext>sin</mtext><mtext>2</mtext></msup><mtext>x</mtext></mrow></msqrt></math>  |+ 4*<math mathsize="0.9em"><msqrt><mrow><mtext>1&#x2212;</mtext><msup><mtext>sin</mtext><mtext>2</mtext></msup><mtext>x</mtext></mrow></msqrt></math>
+
+1 + 4*<math mathsize="0.9em"><msqrt><mrow><mtext>1&#x2212;</mtext><msup><mtext>sin</mtext><mtext>2</mtext></msup><mtext>x</mtext></mrow></msqrt></math> = 3sin x | -1
+
+4*<math mathsize="0.9em"><msqrt><mrow><mtext>1&#x2212;</mtext><msup><mtext>sin</mtext><mtext>2</mtext></msup><mtext>x</mtext></mrow></msqrt></math> = 3sin x - 1 |<sup>2</sup>
 
 <img src="Aufgabe219b.jpg">
 
 16(1 - sin<sup>2</sup> x) = 9 sin<sup>2</sup> x - 6 sin x + 1  
 
-16 - 16 sin<sup>2</sup> x = 9 sin<sup>2</sup> x - 6 sin x + 1 |+16 sin<sup>2</sup> x 
+16 - 16 sin<sup>2</sup> x = 
+
+= 9 sin<sup>2</sup> x - 6 sin x + 1 |+16 sin<sup>2</sup> x 
 
 16 = 25 sin<sup>2</sup> x - 6 sin x + 1 | -16 
 
@@ -100,7 +117,9 @@ A, B, C - Formel:
  
 A = 25 ; B = -6 ; C = -15
 
-<img src="Aufgabe219c.jpg">
+sin x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mtext>&#x2212;</mtext><mfenced><mtext>&#x2212;6</mtext></mfenced><mtext>&#xb1;</mtext><msqrt><mrow><msup><mfenced><mtext>&#x2212;6</mtext></mfenced><mtext>2</mtext></msup><mtext>&#x2212;4&#xd7;25&#xd7;</mtext><mfenced><mtext>&#x2212;15</mtext></mfenced></mrow></msqrt></mrow><mtext>2&#xd7;25</mtext></mfrac></math>
+
+sin x<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mn>6</mn><mtext>&#xb1;</mtext><msqrt><mn>1536</mn></msqrt></mrow><mtext>50</mtext></mfrac></math>
 
               6 ± 39,2   
 sin x<sub>1,2</sub> = - -----------         

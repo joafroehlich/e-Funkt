@@ -4,6 +4,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exponential-, Potenz-, Logarithmus-, e- , Trigonometrische Funktionen</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
   
 </head>
 <body style="background-color:white;; margin-top: 1em; ">
@@ -17,11 +21,12 @@
 
 <pre><p class ="Aufgabe"><b>Aufgabe 218
 
-Ergänzen Sie die Wertetabelle für x zwischen 0 und 2π:
+Ergänzen Sie die Wertetabelle für x zwischen 
+0 und 2π:
 
 y = sin x - 2 cos x  
 
-x     1        <span style="color:red">1,57 oder 3,8</span>                  
+x     1        <span style="color:red">1,57 oder 3,8</span>
 y    -0,24           1  
 
 Amplitude = 2,24 (Berechnung siehe unten); 
@@ -56,7 +61,9 @@ oder 2,67 oder bei (153,15° + 180°) = 333,15°
 
 oder 5,81 auf. 
 
-A = f<sub>(153,15°, 333,15°)</sub> = sin 153,15° - 2 cos 153,15° =  
+A = f<sub>(153,15°, 333,15°)</sub> = 
+
+= sin 153,15° - 2 cos 153,15° =  
 
 = |sin 333,15° - 2 cos 333,15°| = 2,24 gerundet.
 
@@ -70,19 +77,27 @@ x = 1 oder ---------- = 57,3°
 
 y = f<sub>(1)</sub> = sin 1 - 2 cos 1 
 
-= sin 57,3° - 2 cos 57,3° = 0,84 - 2 * 0,54 
+= sin 57,3° - 2 cos 57,3° = 0,84 - 2 * 0,54 = 
 
 = -0,24 gerundet. 
 
 <span style="color:red">Berechnung der x-Werte für y = f<sub>(x)</sub> = 1</span>
 
 f<sub>x</sub> = 1 eingesetzt, existiert zwischen 0 und π 
-bzw. 0° und 180° und zwischen π und 2π bzw. 180° und 360° 
-(siehe Graph). 
+bzw. 0° und 180° und zwischen π und 2π bzw. 180° 
+und 360° (siehe Graph). 
 
 1 = sin x - 2 cos x 
 
-<img src="Aufgabe218b.jpg">
+cos x = <math mathsize="0.9em"><msqrt><mrow><mtext>1&#x2212;</mtext><msup><mtext>sin</mtext><mtext>2</mtext></msup><mtext>x</mtext></mrow></msqrt></math> 
+
+1 = sin x - 2*<math mathsize="0.9em"><msqrt><mrow><mtext>1&#x2212;</mtext><msup><mtext>sin</mtext><mtext>2</mtext></msup><mtext>x</mtext></mrow></msqrt></math>  |+ 2*<math mathsize="0.9em"><msqrt><mrow><mtext>1&#x2212;</mtext><msup><mtext>sin</mtext><mtext>2</mtext></msup><mtext>x</mtext></mrow></msqrt></math>
+
+1 + 2*<math mathsize="0.9em"><msqrt><mrow><mtext>1&#x2212;</mtext><msup><mtext>sin</mtext><mtext>2</mtext></msup><mtext>x</mtext></mrow></msqrt></math> = sin x | -1
+
+2*<math mathsize="0.9em"><msqrt><mrow><mtext>1&#x2212;</mtext><msup><mtext>sin</mtext><mtext>2</mtext></msup><mtext>x</mtext></mrow></msqrt></math> = sin x - 1 |<sup>2</sup>
+
+4 (1 - sin<sup>2</sup> x) = sin<sup>2</sup> x - 2 sin x + 1  
 
 4(1 - sin<sup>2</sup> x) = sin<sup>2</sup> x - 2 sin x + 1 
 
@@ -96,8 +111,12 @@ sin<sup>2</sup> x - 0,4 sin x - 0,6 = 0
  
 p,q - Formel:
 
-<img src="Aufgabe218c.jpg">
- 
+p = -0,4 ; q = -0,6
+
+sin x<sub>1,2</sub> = <math mathsize="1em"><mtext>&#x2212;</mtext><mfrac><mtext>&#x2212;0,4</mtext><mtext>2</mtext></mfrac><mtext>&#xb1;</mtext><msqrt><mrow><msup><mfenced><mfrac><mtext>&#x2212;0,4</mtext><mtext>2</mtext></mfrac></mfenced><mtext>2</mtext></msup><mtext>&#x2212;</mtext><mfenced><mtext>&#x2212;0,6</mtext></mfenced></mrow></msqrt></math>
+
+sin x<sub>1,2</sub> = 0,2 ± <math mathsize="0.9em"><msqrt><mrow><mn>0</mn><mo>,</mo><mn>04</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>6</mn></mrow></msqrt></math>
+
 sin x<sub>1,2</sub> = 0,2 ± 0,8 
  
 sin x<sub>1</sub> = 1  --> 
@@ -108,7 +127,8 @@ sin x<sub>2</sub> = - 0,6  -->
 
 x<sub>2</sub> = arc sin - 0,6 = -0,64      
  
-Weil zwischendurch quadriert wurde, ist eine Probe nötig. 
+Weil zwischendurch quadriert wurde, ist eine 
+Probe nötig. 
  
 Probe: 
  
@@ -124,11 +144,13 @@ sin - 0,6 - 2 cos - 0,6 = 1 ?
  
 -0,64 - 2 * 0,82 = 2,28  keine Lösung 
  
-Die Funktionswerte liegen gleich weit von 
-der Amplitudenstelle entfernt: 
+Die Funktionswerte liegen gleich weit von der 
+Amplitudenstelle entfernt: 
  
 x<sub>1</sub> = π/2 = 1,57 gerundet oder 90°
  
-x<sub>2</sub> = 1,57 + 2 * (2,67 - 1,57) = 3,77 (3,8 gerundet) oder 217,7°
+x<sub>2</sub> = 1,57 + 2 * (2,67 - 1,57) = 
+
+= 3,77 (3,8 gerundet) oder 217,7°
 
 </b></p></pre>
