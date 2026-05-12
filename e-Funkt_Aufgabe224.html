@@ -4,6 +4,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exponential-, Potenz-, Logarithmus-, e- , Trigonometrische Funktionen</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
   
 </head>
 <body style="background-color:white;; margin-top: 1em; ">
@@ -17,11 +21,12 @@
 
 <pre><p class ="Aufgabe"><b>Aufgabe 224
 
-Ergänzen Sie die Wertetabelle für x zwischen 0 und 2π:
+Ergänzen Sie die Wertetabelle für x zwischen 
+0 und 2π:
 
 y = sin 2x - sin x 
 
-x     2       3,5 oder 4,71                
+x     2       3,5 oder 4,71
 y    <span style="color:blue">-1,67</span>         1  
 
 Periode = 2π
@@ -58,15 +63,12 @@ x<sub>5</sub> = (2π - 1,05) = 5,2 gerundet oder 297,9°.
 
 Berechnung der Amplitude A: 
 
-                                    4,71 - 3,5     
-Sie tritt an der Stelle x = 3,5 + (------------) =                                       
-                                         2 
+Sie tritt an der Stelle 
 
-= 4,1 oder 235° gerundet auf. 
- 
-Amplitude = f<sub>(235°)</sub> = 
-
-A = |sin 2 * 235° - sin 235°| = |0,94 - (-0,82)| = 1,76
+            4,71 - 3,5 
+x = 3,5 + (------------) =
+                 2 
+= |0,94 - (-0,82)| = 1,76
 
 <img src="Aufgabe224a.jpg">
 
@@ -83,27 +85,37 @@ f<sub>(2)</sub> = sin (2 * 2) - sin 2 =
 f<sub>(x)</sub> = 1 eingesetzt, existiert zweimal zwischen 
 π und 2π bzw. 180° und 360° (siehe Graph). 
 
-An welchen Stellen x die Funktion den Wert 1 annimmt, 
-ist elementar nicht zu ermitteln.  
+An welchen Stellen x die Funktion den Wert 1 
+annimmt, ist elementar nicht zu ermitteln.  
 
-Zur Berechnung wendet man ein Näherungsverfahren an, 
-hier die Regula falsi. 
+Zur Berechnung wendet man ein Näherungsverfahren 
+an, hier die Regula falsi. 
 
 sin 2x - sin x = 1 
 
-mit  
+mit 
 
-<img src="Aufgabe224b.jpg">
+sin 2x = 2 sin x cos x und cos x = <math mathsize="0.9em"><msqrt><mrow><mtext>1&#x2212;</mtext><msup><mtext>sin</mtext><mtext>2</mtext></msup><mtext>x</mtext></mrow></msqrt></math> 
+
+2 sin x <math mathsize="0.9em"><msqrt><mrow><mtext>1&#x2212;</mtext><msup><mtext>sin</mtext><mtext>2</mtext></msup><mtext>x</mtext></mrow></msqrt></math> - sin x = 1 | +sin x
+
+2 sin x <math mathsize="0.9em"><msqrt><mrow><mtext>1&#x2212;</mtext><msup><mtext>sin</mtext><mtext>2</mtext></msup><mtext>x</mtext></mrow></msqrt></math> = 1 + sin x |<sup>2</sup>
 
 4 sin<sup>2</sup>x(1 - sin<sup>2</sup>x) = 1 + 2 sinx + sin<sup>2</sup>x 
 
-4 sin<sup>2</sup> x - 4 sin<sup>4</sup> x = 1 + 2 sin x + sin<sup>2</sup> x |+4 sin<sup>4</sup> x 
+4 sin<sup>2</sup> x - 4 sin<sup>4</sup> x = 
 
-4 sin<sup>2</sup> x = 1 + 2 sin x + sin<sup>2</sup> x + 4 sin<sup>4</sup> x |-4 sin<sup>2</sup> x 
+= 1 + 2 sin x + sin<sup>2</sup> x |+4 sin<sup>4</sup> x 
+
+4 sin<sup>2</sup> x = 
+
+= 1 + 2 sin x + sin<sup>2</sup> x + 4 sin<sup>4</sup> x |-4 sin<sup>2</sup> x 
 
 4 sin<sup>4</sup> x - 3 sin<sup>2</sup> x + 2 sin x + 1 = 0 
 
-Als Funktion: y = 4 sin<sup>4</sup> x - 3 sin<sup>2</sup> x + 2 sin x + 1 
+Als Funktion: 
+
+y = 4 sin<sup>4</sup> x - 3 sin<sup>2</sup> x + 2 sin x + 1 
 
 <img src="Aufgabe224c.jpg">
 
@@ -120,13 +132,20 @@ x<sub>0</sub> = gesuchte Nullstelle
 x<sub>0</sub>  = ------------------------------ 
              |y<sub>(x<sub>1</sub>)</sub>| + |y<sub>(x<sub>2</sub>)</sub>| 
 
-Nullstelle x<sub>0</sub> zwischen 3,4 und 3,6 mit Excel ermittelt: 
+Nullstelle x<sub>0</sub> zwischen 3,4 und 3,6 mit Excel 
+ermittelt: 
 
-A	B	C	D	E	F	G	H	I	J
-3,4	3,6	0,32	0,31	1,09	1,12	2,20	0,63	3,50   -0,01
-3,4	3,50	0,01	0,31	0,02	1,08	1,10	0,32	3,50	0,00
-3,4	3,50	0,00	0,31	0,00	1,08	1,08	0,31	3,50	0,00
-3,4	3,50	0,00	0,31	0,00	1,08	1,08	0,31	3,50	0,00
+A	B	C	D	E	F	
+3,4	3,6	0,32	0,31	1,09	1,12	
+3,4	3,50	0,01	0,31	0,02	1,08	
+3,4	3,50	0,00	0,31	0,00	1,08	
+3,4	3,50	0,00	0,31	0,00	1,08	
+
+G	H	I	J
+2,20	0,63	3,50   -0,01
+1,10	0,32	3,50	0,00
+1,08	0,31	3,50	0,00
+1,08	0,31	3,50	0,00
 
 Die gesuchte Nullstelle ergibt sich nach 
 mehreren Näherungen mit ausreichender 
@@ -143,15 +162,21 @@ ist eine Probe nötig.
 
 Für x<sub>01</sub>: 
 
-sin (2 * 3,5) - sin 3,5 = 0,657 - (-0,35) = 1 Lösung 
+sin (2 * 3,5) - sin 3,5 = 
+
+= 0,657 - (-0,35) = 1 Lösung 
 
 Für x<sub>02</sub>:   
 
-sin (2 * 4,71) - sin 4,71 = 0,0048 - (-0,9999) = 1 Lösung 
+sin (2 * 4,71) - sin 4,71 = 
+
+= 0,0048 - (-0,9999) = 1 Lösung 
 
 Für x<sub>03</sub>:   
 
-sin (2 * 5,93) - sin 5,93 = - 0,649 - (- 0,346) = -0,3 
+sin (2 * 5,93) - sin 5,93 = 
+
+= -0,649 - (- 0,346) = -0,3 
 
 keine Lösung 
 

@@ -4,6 +4,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exponential-, Potenz-, Logarithmus-, e- , Trigonometrische Funktionen</title>
+
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
   
 </head>
 <body style="background-color:white;; margin-top: 1em; ">
@@ -17,13 +21,14 @@
 
 <pre><p class ="Aufgabe"><b>Aufgabe 225
 
-Ergänzen Sie die Wertetabelle für x zwischen 0 und 2π: 
+Ergänzen Sie die Wertetabelle für x zwischen 
+0 und 2π: 
 
 y = sin 2x - 2 sin x
 
 Periode = 2π 
 
-x     2     <span style="color:red">3,4 oder 5,17</span>                
+x     2     <span style="color:red">3,4 oder 5,17</span>
 y    -2,6        1         
 
 <span style="color:green;">Berechnung der Nullstellen:</span>
@@ -38,7 +43,9 @@ sin 2x = 2 * sin x * cos x
 
 2 sin x * (cos x - 1) = 0 
 
-2 sin x = 0 --> x = 0 + k * π mit k = 1, 2, 3, ... 
+2 sin x = 0 --> 
+
+x = 0 + k * π mit k = 1, 2, 3, ...
 
 cos x - 1 = 0 |+1 
 
@@ -56,15 +63,19 @@ x<sub>3</sub> = 2π oder 360°.
 
 Berechnung der Amplitude A: 
 
-                                    5,17 - 3,4     
-Sie tritt an der Stelle x = 3,4 + (------------) =                                       
-                                         2 
+Sie tritt an der Stelle 
+
+            5,17 - 3,4
+x = 3,4 + (------------) =
+                 2 
 
 = 4,285 oder 245° gerundet auf. 
  
 Amplitude = f<sub>(245°)</sub> = 
 
-A = |sin 2 * 245° - 2 * sin 245°| = |0,766 - (-1,81)| = 
+A = |sin 2 * 245° - 2 * sin 245°| = 
+
+= |0,766 - (-1,81)| = 
 
 = 2,576 = 2,6 gerundet
 
@@ -79,25 +90,34 @@ f<sub>(2)</sub> = sin (2 * 2) - 2 sin 2 =
 <span style="color:red">Berechnung der x-Werte für y = f<sub>(x)</sub> = 1</span>
 
 f<sub>(x)</sub> = 1 eingesetzt, existiert zweimal 
-zwischen π und 2π bzw. 180° und 360° (siehe Graph). 
+zwischen π und 2π bzw. 180° und 360° 
+(siehe Graph). 
 
-An welchen Stellen x die Funktion den Wert 1 annimmt, 
-ist elementar nicht zu ermitteln.  
+An welchen Stellen x die Funktion den Wert 
+1 annimmt, ist elementar nicht zu ermitteln.  
 
-Zur Berechnung wendet man ein Näherungsverfahren an, 
-hier die Regula falsi. 
+Zur Berechnung wendet man ein Näherungsverfahren 
+an, hier die Regula falsi. 
 
 sin 2x - 2 sin x = 1
 
 mit 
 
-<img src="Aufgabe225b.jpg">
+sin 2x = 2 sin x cos x und cos x = <math mathsize="0.9em"><msqrt><mrow><mtext>1&#x2212;</mtext><msup><mtext>sin</mtext><mtext>2</mtext></msup><mtext>x</mtext></mrow></msqrt></math> 
+
+2 sin x <math mathsize="0.9em"><msqrt><mrow><mtext>1&#x2212;</mtext><msup><mtext>sin</mtext><mtext>2</mtext></msup><mtext>x</mtext></mrow></msqrt></math> - sin x = 1 | +sin x
+
+2 sin x <math mathsize="0.9em"><msqrt><mrow><mtext>1&#x2212;</mtext><msup><mtext>sin</mtext><mtext>2</mtext></msup><mtext>x</mtext></mrow></msqrt></math> = 1 + sin x |<sup>2</sup>
 
 4 sin<sup>2</sup> x (1 - sin<sup>2</sup> x) = 1 + 4 sin x + 4 sin<sup>2</sup> x 
 
-4 sin<sup>2</sup> x - 4 sin<sup>4</sup> x = 1 + 4 sin x + 4 sin<sup>2</sup> x |+4 sin<sup>4</sup> x 
+4 sin<sup>2</sup> x - 4 sin<sup>4</sup> x = 
 
-4 sin<sup>2</sup> x = 1 + 4 sin x + 4 sin<sup>2</sup> x + 4 sin<sup>4</sup> x |-4 sin<sup>2</sup> x 
+= 1 + 4 sin x + 4 sin<sup>2</sup> x |+4 sin<sup>4</sup> x 
+
+4 sin<sup>2</sup> x = 
+
+= 1 + 4 sin x + 4 sin<sup>2</sup> x + 4 sin<sup>4</sup> x |-4 sin<sup>2</sup> x 
 
 4 sin<sup>4</sup> x + 4 sin x + 1 = 0 |:4 
 
@@ -109,7 +129,8 @@ Als Funktion: y = sin<sup>4</sup> x + sin x + 0,25
 
 Abgelesen: Nullstellen zwischen 3,3 und 3,5, 
 zwischen 4,2 und 4,4, zwischen 5 und 5,2 und 
-zwischen 5,9 und 6,1. (Vorzeichenwechsel für f(x)) 
+zwischen 5,9 und 6,1. 
+(Vorzeichenwechsel für f(x)) 
 
 Regula falsi: 
 
@@ -119,13 +140,20 @@ x<sub>0</sub> = gesuchte Nullstelle
 x<sub>0</sub>  = ------------------------------ 
              |y<sub>(x<sub>1</sub>)</sub>| + |y<sub>(x<sub>2</sub>)</sub>| 
 
-Nullstelle x<sub>0</sub> zwischen 3,3 und 3,5 mit Excel ermittelt: 
+Nullstelle x<sub>0</sub> zwischen 3,3 und 3,5 mit Excel 
+ermittelt: 
 
-A	B	C	D	E	F	G	H	I	J
-3,3	3,5	0,0856	0,0929	0,2826	0,3251	0,6077	0,1785	3,4041	-0,0049
-3,3	3,4041	0,0049	0,0929	0,0162	0,3161	0,3324	0,0978	3,3988	-0,0002
-3,3	3,3988	0,0002	0,0929	0,0007	0,3157	0,3163	0,0931	3,3986	 0,0000
-3,3	3,3986	0,0000	0,0929	0,0000	0,3156	0,3157	0,0929	3,3986	 0,0000
+A	B	C	D	E	F	
+3,3	3,5	0,0856	0,0929	0,2826	0,3251	
+3,3	3,4041	0,0049	0,0929	0,0162	0,3161	
+3,3	3,3988	0,0002	0,0929	0,0007	0,3157	
+3,3	3,3986	0,0000	0,0929	0,0000	0,3156	
+
+G	H	I	J
+0,6077	0,1785	3,4041	-0,0049
+0,3324	0,0978	3,3988	-0,0002
+0,3163	0,0931	3,3986	 0,0000
+0,3157	0,0929	3,3986	 0,0000
  
 Die gesuchte Nullstelle ergibt sich nach 
 mehreren Näherungen mit ausreichender 
@@ -145,19 +173,27 @@ ist eine Probe nötig.
 
 Für x<sub>01</sub>:   
 
-sin (2 * 3,4) - 2 sin 3,4 = 0,494 -(-0,511) = 1 Lösung 
+sin (2 * 3,4) - 2 sin 3,4 = 
+
+0 0,494 -(-0,511) = 1 Lösung 
 
 Für x<sub>02</sub>:   
 
-sin (2 * 4,25) - 2 sin 4,25 = 0,8 -(-1,79) = 2,59 keine Lösung 
+sin (2 * 4,25) - 2 sin 4,25 = 
+
+= 0,8 -(-1,79) = 2,59 keine Lösung 
 
 Für x<sub>03</sub>:   
 
-sin (2 * 5,17) - 2 sin 5,17 = -0,793 - (-1,794) = 1 Lösung 
+sin (2 * 5,17) - 2 sin 5,17 = 
+
+= -0,793 - (-1,794) = 1 Lösung 
 
 Für x<sub>04</sub>:   
 
-in (2 * 6) - 2 sin 6 = -0,537 - (-0,559) = 0,02 keine Lösung 
+in (2 * 6) - 2 sin 6 = 
+
+= -0,537 - (-0,559) = 0,02 keine Lösung 
 
 Gesuchte x-Werte: 
 
