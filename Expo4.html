@@ -7,52 +7,111 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exponential-, Potenz-, Logarithmus-, e- , Trigonometrische Funktionen</title>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
-<body style="background-color:white;">
+<body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button {background-color:white; font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
 
+    <main>
+
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
-		<pre><p class="Text1">Exponential-, Potenz-, Logarithmus-, 
-e- , Trigonometrische Funktionen
+		<p class="Text1">Exponential-, Potenz-, <br class="br-mobil">Logarithmus-,
+e- , <br class="br-mobil">Trigonometrische Funktionen
 <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die 
 Schalter: Prüfen und Lösung.</span>
 <p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es 
-oder starten Sie eine Lösung.</span></p></pre>
+oder starten Sie eine Lösung.</span></p>
 
-    <p class="Aufgabe"><span style= "background-color:white;">Ergänzen Sie die Wertetabellen für die Graphen:</span></p>
-    
-<!--//Aufgabe 109-->                     
-                      
-    <pre><b><p class="Aufgabe">Aufgabe 109
+    <h2>Ergänzen Sie die Wertetabellen für die Graphen:</h2> 
 
-y = 6 + 2e<sup>x</sup>       
+<div class="check">
 
-x     -2            
-y     6,3     11,4 
+<!--//Aufgabe 109-->
 
-<img src="Aufgabe109.jpg" >
+  <h2>Aufgabe 109</h2><p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe109.html');" >Lösung</button></p></pre>   
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><mn>6</mn><mo>+</mo><mn>2</mn><msup><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi></msup></math></p>     
+
+<pre>x     -2       ?     
+y     6,3     11,4 </pre>
+
+<img src="Aufgabe109.jpg" ></p>
+
+<button  onclick="window.open('e-Funkt_Aufgabe109.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 110-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 110
+  <h2>Aufgabe 110</h2><p>
 
-y = 3e<sup>-x</sup> - 7         
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><mn>3</mn><msup><mi mathvariant="normal">e</mi><mrow><mo>&#x2212;</mo><mi mathvariant="normal">x</mi></mrow></msup><mo>&#x2212;</mo><mn>7</mn></math></p>    
 
-x      0     3   
-y     -4   <input type="text" id="Eintrag110" maxlength="5" size="2" style= background-color:yellow ></input>
+<pre>x      0     3   
+y     -4     ?</pre>
 
-<button id="Pruef110" onclick="Aufgabe110()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag110" maxlength="5"  ></input> <button id="Pruef110" onclick="Aufgabe110()">Prüfen</button></p>
 
 <img src="Aufgabe110.jpg" >
 
@@ -72,27 +131,27 @@ y     -4   <input type="text" id="Eintrag110" maxlength="5" size="2" style= back
                       
 <!--//Aufgabe 111-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 111
+    <h2>Aufgabe 111</h2><p>
 
-y = x<sup>5</sup> * e<sup>-x</sup>         
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><msup><mi mathvariant="normal">x</mi><mn>5</mn></msup><mo>&#xd7;</mo><msup><mi mathvariant="normal">e</mi><mrow><mo>&#x2212;</mo><mi mathvariant="normal">x</mi></mrow></msup></math></p>    
 
-x     -1                 
-y     -e     4,3 
+<pre>x     -1      ?           
+y     -e     4,3</pre> 
 
-<img src="Aufgabe111.jpg" >
+<img src="Aufgabe111.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe111.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe111.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 112-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 112
+  <h2>Aufgabe 112</h2><p>
 
-y = √x * e<sup>-x</sup>          
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><msqrt><mi mathvariant="normal">x</mi></msqrt><mo>&#xd7;</mo><msup><mi mathvariant="normal">e</mi><mrow><mo>&#x2212;</mo><mi mathvariant="normal">x</mi></mrow></msup></math></p>        
 
-x     1     <input type="text" id="Eintrag112" maxlength="4" size="1" style= background-color:yellow ></input>      
+x     1       ?      
 y    0,4     0,09
 
-<button id="Pruef112" onclick="Aufgabe112()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag112" maxlength="4"  ></input> <button id="Pruef112" onclick="Aufgabe112()">Prüfen</button></p>
 
 <img src="Aufgabe112.jpg" >
     
@@ -111,27 +170,27 @@ y    0,4     0,09
                       
 <!--//Aufgabe 113-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 113
+    <h2>Aufgabe 113</h2><p>
 
-y = 0,5x + 3 + e<sup>-x</sup>        
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mi mathvariant="normal">x</mi><mo>+</mo><mn>3</mn><mo>+</mo><msup><mi mathvariant="normal">e</mi><mrow><mo>&#x2212;</mo><mi mathvariant="normal">x</mi></mrow></msup></math></p>  
 
-x     -1             
-y     5,2     4,1   
+<pre>x     -1       ?      
+y     5,2     4,1</pre>   
 
-<img src="Aufgabe113.jpg" > 
+<img src="Aufgabe113.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe113.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe113.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 114-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 114
+  <h2>Aufgabe 114</h2><p>
 
-y = x - ex          
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><mi mathvariant="normal">x</mi><mo>&#x2212;</mo><msup><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi></msup></math></p>        
 
-x      -1,96 oder 1,2      2   
-y          -2,1          <input type="text" id="Eintrag114" maxlength="4" size="1" style= background-color:yellow ></input>    
+<pre>x      -1,96 oder 1,2      2   
+y          -2,1            ?</pre>    
 
-<button id="Pruef114" onclick="Aufgabe114()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag114" maxlength="4"  ></input> <button id="Pruef114" onclick="Aufgabe114()">Prüfen</button></p>
 
 <img src="Aufgabe114.jpg" >
     
@@ -151,27 +210,27 @@ y          -2,1          <input type="text" id="Eintrag114" maxlength="4" size="
                       
 <!--//Aufgabe 115-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 115
+    <h2>Aufgabe 115</h2><p>
 
-y = 3e<sup>x</sup> - x<sup>7</sup>            
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><mn>3</mn><msup><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi></msup><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mn>7</mn></msup></math> </p>
 
-x     0            
-y     3     4,9
+<pre>x     0      ?      
+y     3     4,9</pre>
 
-<img src="Aufgabe115.jpg" >
+<img src="Aufgabe115.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe115.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe115.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 116-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 116
+  <h2>Aufgabe 116</h2><p>
 
-y = x² + e<sup>x</sup>                
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup><mo>+</mo><msup><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi></msup></math></p>               
 
 x     -2     1
-y    <input type="text" id="Eintrag116" maxlength="3" size="1" style= background-color:yellow ></input>  e  
+y      ?     e  
 
-<button id="Pruef116" onclick="Aufgabe116()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag116" maxlength="3"  ></input> <button id="Pruef116" onclick="Aufgabe116()">Prüfen</button></p>
 
 <img src="Aufgabe116.jpg" >
     
@@ -191,27 +250,27 @@ y    <input type="text" id="Eintrag116" maxlength="3" size="1" style= background
                       
 <!--//Aufgabe 117-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 117
+    <h2>Aufgabe 117</h2><p>
 
-y = e<sup>x-2</sup>            
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><msup><mi mathvariant="normal">e</mi><mrow><mi mathvariant="normal">x</mi><mo>&#x2212;</mo><mn>2</mn></mrow></msup></math></p>           
 
-x     1                 
-y     0,4     e
+<pre>x     1       ?          
+y     0,4     e</pre>
 
-<img src="Aufgabe117.jpg" >
+<img src="Aufgabe117.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe117.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe117.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 118-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 118
+  <h2>Aufgabe 118</h2><p>
 
-y = 0,5e<sup>-x</sup> + 3             
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><msup><mi mathvariant="normal">e</mi><mrow><mo>&#x2212;</mo><mi mathvariant="normal">x</mi></mrow></msup><mo>+</mo><mn>3</mn></math></p>          
 
-x     -2     1         
-y     6,7  <input type="text" id="Eintrag118" maxlength="3" size="1" style= background-color:yellow ></input> 
+<pre>x     -2     1         
+y     6,7    ?</pre>
 
-<button id="Pruef118" onclick="Aufgabe118()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag118" maxlength="3"  ></input> <button id="Pruef118" onclick="Aufgabe118()">Prüfen</button></p>
 
 <img src="Aufgabe118.jpg" >
     
@@ -231,27 +290,27 @@ y     6,7  <input type="text" id="Eintrag118" maxlength="3" size="1" style= back
                       
 <!--//Aufgabe 119-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 119
+    <h2>Aufgabe 119</h2><p>
 
-y = 0,25x - e<sup>x</sup>             
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>25</mn><mi mathvariant="normal">x</mi><mo>&#x2212;</mo><msup><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi></msup></math></p>        
 
-x               2   
-y     -2,5     -6,9 
+<pre>x       ?       2   
+y     -2,5     -6,9</pre> 
 
-<img src="Aufgabe119.jpg" >
+<img src="Aufgabe119.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe119.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe119.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 120-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 120
+  <h2>Aufgabe 120</h2><p>
 
-y = x + e<sup>x</sup>           
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><mi mathvariant="normal">x</mi><mo>+</mo><msup><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi></msup></math></p>        
 
-x    <input type="text" id="Eintrag120" maxlength="2" size="1" style= background-color:yellow ></input>     1   
-y     -1,9     3,7    
+<pre>x       ?       1   
+y     -1,9     3,7</pre>    
 
-<button id="Pruef120" onclick="Aufgabe120()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag120" maxlength="2"  ></input> <button id="Pruef120" onclick="Aufgabe120()">Prüfen</button></p>
 
 <img src="Aufgabe120.jpg" > 
     
@@ -271,27 +330,27 @@ y     -1,9     3,7
                       
 <!--//Aufgabe 121-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 121
+    <h2>Aufgabe 121</h2><p>
 
-y = 2x - e<sup>x</sup>       
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><mn>2</mn><mi mathvariant="normal">x</mi><mo>&#x2212;</mo><msup><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi></msup></math></p>     
 
-x     -1     -1,6 oder 2     
-y                -3,4  
+<pre>x     -1     -1,6 oder 2     
+y      ?          -3,4 </pre> 
 
-<img src="Aufgabe121.jpg" > 
+<img src="Aufgabe121.jpg" > </p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe121.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe121.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 122-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 122
+  <h2>Aufgabe 122</h2><p>
 
-y = x + 0,5e-x         
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><mi mathvariant="normal">x</mi><mo>+</mo><mn>0</mn><mo>,</mo><mn>5</mn><msup><mi mathvariant="normal">e</mi><mrow><mo>&#x2212;</mo><mi mathvariant="normal">x</mi></mrow></msup></math></p>        
 
-x     -2    <input type="text" id="Eintrag122" maxlength="4" size="1" style= background-color:yellow ></input>          
-y     1,7     3 
+<pre>x     -2      ?    
+y     1,7     3</pre> 
 
-<button id="Pruef122" onclick="Aufgabe122()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag122" maxlength="4"  ></input>     <button id="Pruef122" onclick="Aufgabe122()">Prüfen</button></p>
 
 <img src="Aufgabe122.jpg" >
     
@@ -311,27 +370,27 @@ y     1,7     3
                       
 <!--//Aufgabe 123-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 123
+    <h2>Aufgabe 123</h2><p>
 
-y = e<sup>x</sup> + e<sup>-x</sup>       
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><msup><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi></msup><mo>+</mo><msup><mi mathvariant="normal">e</mi><mrow><mo>&#x2212;</mo><mi mathvariant="normal">x</mi></mrow></msup></math></p>     
 
-x     -1                 
-y     3,1     7,5      
+<pre>x     -1       ?          
+y     3,1     7,5</pre>      
 
-<img src="Aufgabe123.jpg" > 
+<img src="Aufgabe123.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe123.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe123.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 124-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 124
+  <h2>Aufgabe 124</h2><p>
 
-y = e * x + e<sup>-x</sup>            
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><mi mathvariant="normal">e</mi><mo>&#xd7;</mo><mi mathvariant="normal">x</mi><mo>+</mo><msup><mi mathvariant="normal">e</mi><mrow><mo>&#x2212;</mo><mi mathvariant="normal">x</mi></mrow></msup></math></p>           
 
-x   <input type="text" id="Eintrag124" maxlength="2" size="1" style= background-color:yellow ></input>    2   
-y     0     5,6  
+<pre>x     ?     2   
+y     0     5,6</pre>  
 
-<button id="Pruef124" onclick="Aufgabe124()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag124" maxlength="2"  ></input> <button id="Pruef124" onclick="Aufgabe124()">Prüfen</button></p>
 
 <img src="Aufgabe124.jpg" >
     
@@ -351,27 +410,27 @@ y     0     5,6
                       
 <!--//Aufgabe 125-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 125
+    <h2>Aufgabe 125</h2><p>
 
-y = 5 * x * e<sup>x</sup>             
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><mn>5</mn><mo>&#xd7;</mo><mi mathvariant="normal">x</mi><mo>&#xd7;</mo><msup><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi></msup></math></p>           
 
-x     -2     1
-y           13,6  
+<pre>x     -2     1
+y      ?     13,6</pre>  
 
-<img src="Aufgabe125.jpg" >
+<img src="Aufgabe125.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe125.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe125.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 126-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 126
+  <h2>Aufgabe 126</h2><p>
 
-y = (x - 2) * e<sup>x</sup>          
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><mfenced><mrow><mi mathvariant="normal">x</mi><mo>&#x2212;</mo><mn>2</mn></mrow></mfenced><mo>&#xd7;</mo><msup><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi></msup></math></p>        
 
-x      <input type="text" id="Eintrag126" maxlength="3" size="1" style= background-color:yellow ></input>      1 
-y      -0,54     -2,7   
+<pre>x         ?       1 
+y      -0,54     -2,7</pre>   
 
-<button id="Pruef126" onclick="Aufgabe126()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag126" maxlength="3"  ></input> <button id="Pruef126" onclick="Aufgabe126()">Prüfen</button></p>
  
  <img src="Aufgabe126.jpg" >
     
@@ -391,27 +450,27 @@ y      -0,54     -2,7
                       
  <!--//Aufgabe 127-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 127
+    <h2>Aufgabe 127</h2><p>
 
-y = 3 * x * e<sup>-x+1</sup>       
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><mn>3</mn><mo>&#xd7;</mo><mi mathvariant="normal">x</mi><mo>&#xd7;</mo><msup><mi mathvariant="normal">e</mi><mrow><mo>&#x2212;</mo><mi mathvariant="normal">x</mi><mo>+</mo><mn>1</mn></mrow></msup></math></p>  
 
-x     -0,5           
-y     -6,7     3     
+<pre>x     -0,5     ?      
+y     -6,7     3</pre>     
 
-<img src="Aufgabe127.jpg" > 
+<img src="Aufgabe127.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe127.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe127.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 128-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 128
+  <h2>Aufgabe 128</h2><p>
 
-y = x * e<sup>-2x</sup> + 2         
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><mi mathvariant="normal">x</mi><mo>&#xd7;</mo><msup><mi mathvariant="normal">e</mi><mrow><mo>&#x2212;</mo><mn>2</mn><mi mathvariant="normal">x</mi></mrow></msup><mo>+</mo><mn>2</mn></math></p> 
 
-x     -1       3   
-y     -5,5   <input type="text" id="Eintrag128" maxlength="1" size="1" style= background-color:yellow ></input>  
+<pre>x     -1       3   
+y     -5,5     ?</pre>
 
-<button id="Pruef128" onclick="Aufgabe128()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag128" maxlength="1"  ></input>  <button id="Pruef128" onclick="Aufgabe128()">Prüfen</button></p>
 
 <img src="Aufgabe128.jpg" >
     
@@ -431,19 +490,19 @@ y     -5,5   <input type="text" id="Eintrag128" maxlength="1" size="1" style= ba
                       
 <!--//Aufgabe 129-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 129
+    <h2>Aufgabe 129</h2><p>
 
-y = 3 * e<sup>-x<sup>2</sup>       
+<math mathsize="1em"><mi mathvariant="normal">y</mi><mo>=</mo><mn>3</mn><mo>&#xd7;</mo><msup><mi mathvariant="normal">e</mi><mrow><mo>&#x2212;</mo><msup><mi mathvariant="normal">x</mi><mn>2</mn></msup></mrow></msup></math></p>   
 
-x     -1                 
-y      1,1     3  
+<pre>x     -1       ?          
+y      1,1     3</pre>  
 
-<img src="Aufgabe129.jpg" >
+<img src="Aufgabe129.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe129.html');" >Lösung</button></p></b></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe129.html');" >Lösung</button></p>
 
 
- <a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+ <a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a></main></div>
                     
         <script>
             document.body.addEventListener("input", function(inputEvent) {
