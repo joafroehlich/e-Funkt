@@ -7,39 +7,98 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exponential-, Potenz-, Logarithmus-, e- , Trigonometrische Funktionen</title>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
-<body style="background-color: white">
+<body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
 
+    <main>
+
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
-		<pre><p class="Text1">Exponential-, Potenz-, Logarithmus-, 
-e- , Trigonometrische Funktionen
+		<p class="Text1">Exponential-, Potenz-, <br class="br-mobil">Logarithmus-,
+e- , <br class="br-mobil">Trigonometrische Funktionen
 <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die 
 Schalter: Prüfen und Lösung.</span>
 <p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es 
-oder starten Sie eine Lösung.</span></p></pre>
+oder starten Sie eine Lösung.</span></p>
 
-    
+    <h2>Ergänzen Sie die Wertetabellen für die Graphen:</h2> 
+
+<div class="check">
 
 <!--//Aufgabe 130-->
 
-  <pre><b><p class ="Aufgabe" >Aufgabe 130
+  <h2>Aufgabe 130</h2><p>
 
-y = sin x              
+y = sin(x)</p>              
 
-x     4,26     π/2 
-y    <input type="text" id="Eintrag130" maxlength="4" size="1" style= background-color:yellow ></input>      1   
+<pre>x     4,26     π/2 
+y       ?       1</pre>   
 
-<button id="Pruef130" onclick="Aufgabe130()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag130" maxlength="4"  ></input> <button id="Pruef130" onclick="Aufgabe130()">Prüfen</button></p>
 
 <img src="Aufgabe130.jpg" >
     
@@ -59,27 +118,27 @@ y    <input type="text" id="Eintrag130" maxlength="4" size="1" style= background
                       
 <!--//Aufgabe 131-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 131
+    <h2>Aufgabe 131</h2><p>
 
-y = cos x             
+y = cos(x)</p>              
 
-x     π/2             
-y      0      -0,4 
+<pre>x     π/2       ?      
+y      0      -0,4</pre> 
 
-<img src="Aufgabe131.jpg" >
+<img src="Aufgabe131.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe131.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe131.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 132-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 132
+  <h2>Aufgabe 132</h2><p>
 
-y = tan x               
+y = tan(x)                
 
-x   <input type="text" id="Eintrag132" maxlength="4" size="1" style= background-color:yellow ></input>    2   
-y     -1     -2  
+<pre>x      ?      2   
+y     -1     -2</pre>  
 
-<button id="Pruef132" onclick="Aufgabe132()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag132" maxlength="4"  ></input> <button id="Pruef132" onclick="Aufgabe132()">Prüfen</button></p>
 
 <img src="Aufgabe132.jpg" >
     
@@ -99,27 +158,27 @@ y     -1     -2
                       
 <!--//Aufgabe 133-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 133
+    <h2>Aufgabe 133</h2><p>
 
-y = cot x              
+y = cot(x)              
 
-x       1      0 
-y     0,64               
+<pre>x       1      0 
+y     0,64     ?</pre>          
 
- <img src="Aufgabe133.jpg" > 
+ <img src="Aufgabe133.jpg" ></p> 
  
- <button  onclick="window.open('e-Funkt_Aufgabe133.html');" >Lösung</button></p></pre>   
+ <button  onclick="window.open('e-Funkt_Aufgabe133.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 134-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 134
+  <h2>Aufgabe 134</h2><p>
 
-y = sin-x              
+y = sin(-x)</p>              
 
-x       1      <input type="text" id="Eintrag134" maxlength="3" size="1" style= background-color:yellow ></input>
-y     -0,84     0,96   
+<pre>x       1        ?
+y     -0,84     0,96</pre>   
 
-<button id="Pruef134" onclick="Aufgabe134()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag134" maxlength="3"  ></input> <button id="Pruef134" onclick="Aufgabe134()">Prüfen</button></p>
 
 <img src="Aufgabe134.jpg" >
     
@@ -139,27 +198,27 @@ y     -0,84     0,96
                       
 <!--//Aufgabe 135-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 135
+    <h2>Aufgabe 135</h2><p>
 
-y = cos-x             
+y = cos(-x)             
 
-x     1     2 oder 4,3        
-y            -0,416     
+<pre>x     1     2 oder 4,3        
+y     ?       -0,416</pre>     
 
-<img src="Aufgabe135.jpg" > 
+<img src="Aufgabe135.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe135.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe135.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 136-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 136
+  <h2>Aufgabe 136</h2><p>
 
-y = tan-x               
+y = tan(-x)               
 
-x     0,78   <input type="text" id="Eintrag136" maxlength="4" size="1" style= background-color:yellow ></input>                
-y      -1      1    
+<pre>x     0,78     ?            
+y      -1      1</pre>    
 
-<button id="Pruef136" onclick="Aufgabe136()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag136" maxlength="4"  ></input>   <button id="Pruef136" onclick="Aufgabe136()">Prüfen</button></p>
 
 <img src="Aufgabe136.jpg" >
     
@@ -179,27 +238,27 @@ y      -1      1
                       
 <!--//Aufgabe 137-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 137
+    <h2>Aufgabe 137</h2><p>
 
-y = sin2x              
+y = sin(2x)              
 
-x       2            
-y     -0,78     0,9     
+<pre>x       2        ?    
+y     -0,78     0,9</pre>     
 
-<img src="Aufgabe137.jpg" > 
+<img src="Aufgabe137.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe137.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe137.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 138-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 138
+  <h2>Aufgabe 138</h2><p>
 
-y = cos2x             
+y = cos(2x)</p>             
 
-x     3,5      <input type="text" id="Eintrag138" maxlength="3" size="2" style= background-color:yellow ></input>         
-y     0,75     -0,416 
+<pre>x     3,5         ?     
+y     0,75     -0,416</pre> 
 
-<button id="Pruef138" onclick="Aufgabe138()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag138" maxlength="3" ></input>  <button id="Pruef138" onclick="Aufgabe138()">Prüfen</button></p>
 
 <img src="Aufgabe138.jpg" > 
     
@@ -219,27 +278,28 @@ y     0,75     -0,416
                       
 <!--//Aufgabe 139-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 139
+    <h2>Aufgabe 139</h2><p>
 
-y = tan2x     
+y = tan(2x)</p>     
 
-x     0,5     1,3 oder 2,9 oder 4,4 oder 6
-y                       -0,6    
+<pre>x     0,5     1,3 oder 2,9 oder 4,4 
+                  oder 6
+y      ?                -0,6</pre>    
 
-<img src="Aufgabe139.jpg" > 
+<img src="Aufgabe139.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe139.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe139.html');" >Lösung</button></p>   
 
  <!--//Aufgabe 140-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 140
+  <h2>Aufgabe 140</h2><p>
 
-y = sin-2x             
+y = sin(-2x)</p>             
 
-x      2      <input type="text" id="Eintrag140" maxlength="4" size="1" style= background-color:yellow ></input>      
-y     0,76     -0,9  
+<pre>x      2         ?  
+y     0,76     -0,9</pre>  
 
-<button id="Pruef140" onclick="Aufgabe140()">Prüfen</button></p></pre>
+? =  <input type="text" id="Eintrag140" maxlength="4"  ></input>  <button id="Pruef140" onclick="Aufgabe140()">Prüfen</button></p>
 
 <img src="Aufgabe140.jpg" >    
  
@@ -258,27 +318,28 @@ y     0,76     -0,9
                       
 <!--//Aufgabe 141-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 141
+    <h2>Aufgabe 141</h2><p>
 
-y = cos-2x   
+y = cos(-2x)   
 
-x     3,5     1 oder 2,1 oder 4,1 oder 5,3
-y                       -0,416  
+<pre>x     3,5     1 oder 2,1 oder 4,1 
+                oder 5,3
+y      ?                 -0,416 </pre> 
 
-<img src="Aufgabe141.jpg" >
+<img src="Aufgabe141.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe141.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe141.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 142-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 142
+  <h2>Aufgabe 142</h2><p>
 
-y = tan-2x              
+y = tan(-2x)             
 
-x       0,5    <input type="text" id="Eintrag142" maxlength="3" size="1" style= background-color:yellow ></input>
-y     -1,56     0,6   
+<pre>x       0,5      ?
+y     -1,56     0,6</pre>   
 
-<button id="Pruef142" onclick="Aufgabe142()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag142" maxlength="3"  ></input> <button id="Pruef142" onclick="Aufgabe142()">Prüfen</button></p>
 
 <img src="Aufgabe142.jpg" >
     
@@ -296,31 +357,29 @@ y     -1,56     0,6
                          
                       </script> 
                       
-<p class="Aufgabe"><span style= "background-color:white;">Ergänzen Sie die Wertetabellen für x zwischen 0 und 5π:</span></p>
+<h2>Ergänzen Sie die Wertetabellen für x zwischen 0 und 5π:</h2></p>
                       
 <!--//Aufgabe 143-->                     
-                      
-    <pre><p class="Aufgabe">Aufgabe 143
 
-y = sin0,4x            
+y = sin(0,4x)            
 
-x     2            
-y     0,72     -0,59      
+<pre>x     2          ?  
+y     0,72     -0,59</pre>      
 
-<img src="Aufgabe143.jpg" > 
+<img src="Aufgabe143.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe143.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe143.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 144-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 144
+  <h2>Aufgabe 144</h2><p>
 
-y = cos0,4x           
+y = cos(0,4x)           
 
-x     2π     π oder 4π     
-y   <input type="text" id="Eintrag144" maxlength="4" size="1" style= background-color:yellow ></input>    0,309  
+<pre>x     2π     π oder 4π     
+y      ?       0,309</pre>  
 
-<button id="Pruef144" onclick="Aufgabe144()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag144" maxlength="4"  ></input> <button id="Pruef144" onclick="Aufgabe144()">Prüfen</button></p>
 
 <img src="Aufgabe144.jpg" > 
     
@@ -340,27 +399,27 @@ y   <input type="text" id="Eintrag144" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 145-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 145
+    <h2>Aufgabe 145</h2><p>
 
-y = tan0,4x             
+y = tan(0,4x)             
 
-x     3π                    
-y     0,7     -0,73   
+<pre>x     3π         ?           
+y     0,7     -0,73</pre>   
 
-<img src="Aufgabe145.jpg" > 
+<img src="Aufgabe145.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe145.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe145.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 146-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 146
+  <h2>Aufgabe 146</h2><p>
 
-y = sin-0,4x           
+y = sin(-0,4x)           
 
-x     2     3π oder 14,1    
-y  <input type="text" id="Eintrag146" maxlength="5" size="2" style= background-color:yellow ></input>     0,59"    
+<pre>x     2     3π oder 14,1    
+y     ?       0,59</pre>    
 
-<button id="Pruef146" onclick="Aufgabe146()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag146" maxlength="5" ></input> <button id="Pruef146" onclick="Aufgabe146()">Prüfen</button></p>
 
 <img src="Aufgabe146.jpg" >
     
@@ -380,27 +439,27 @@ y  <input type="text" id="Eintrag146" maxlength="5" size="2" style= background-c
                       
 <!--//Aufgabe 147-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 147
+    <h2>Aufgabe 147</h2><p>
 
-y = cos-0,4x          
+y = cos(-0,4x)</p>          
 
-x      2π              
-y     -0,8     0,309    
+<pre>x      2π        ?      
+y     -0,8     0,309</pre>    
 
-<img src="Aufgabe147.jpg" > 
+<img src="Aufgabe147.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe147.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe147.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 148-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 148
+  <h2>Aufgabe 148</h2><p>
 
-y = tan-0,4x            
+y = tan(-0,4x)</p>            
 
-x      3π     2π oder 14,1
-y    <input type="text" id="Eintrag148" maxlength="4" size="1" style= background-color:yellow ></input>       0,73    
+<pre>x      3π     2π oder 14,1
+y       ?        0,73</pre>    
 
-<button id="Pruef148" onclick="Aufgabe148()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag148" maxlength="4"  ></input >  <button id="Pruef148" onclick="Aufgabe148()">Prüfen</button></p>
 
 <img src="Aufgabe148.jpg" >
     
@@ -418,33 +477,33 @@ y    <input type="text" id="Eintrag148" maxlength="4" size="1" style= background
                          
                       </script>
 
-<p class="Aufgabe"><span style= "background-color:white;">Ergänzen Sie die Wertetabellen für x zwischen 0 und 2π:</span></p>                      
+<h2>Ergänzen Sie die Wertetabellen für x zwischen 0 und 2π:</h2></p>                      
 
 <!--//Aufgabe 149-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 149
+    <h2>Aufgabe 149</h2><p>
 
-y = 2sin x              
+y = 2sin(x)              
 
-x     1            
-y     2,7     -1,5  
+<pre>x     1         ?   
+y     2,7     -1,5</pre>  
 
-<img src="Aufgabe149.jpg" > 
+<img src="Aufgabe149.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe149.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe149.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 150-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 150
+  <h2>Aufgabe 150</h2><p>
 
-y = 2cos x             
+y = 2cos(x)</p>             
 
-x     1     2 oder 4,3
-y   <input type="text" id="Eintrag150" maxlength="3" size="1" style= background-color:yellow ></input>    -0,83    
+<pre>x     1     2 oder 4,3
+y     ?       -0,83</pre>    
 
-<button id="Pruef150" onclick="Aufgabe150()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag150" maxlength="3"  ></input>  <button id="Pruef150" onclick="Aufgabe150()">Prüfen</button></p>
 
-<img src="Aufgabe150.jpg" >
+  <img src="Aufgabe150.jpg" >
     
  
                       <script>
@@ -462,39 +521,40 @@ y   <input type="text" id="Eintrag150" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 151-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 151
+    <h2>Aufgabe 151</h2><p>
 
-y = 2tan x
+y = 2tan(x)
 
-x     1
-y     3,1     -4,4
-<img src="Aufgabe151.jpg" > 
+<pre>x     1         ?
+y     3,1     -4,4</pre>
 
-<button  onclick="window.open('e-Funkt_Aufgabe151.html');" >Lösung</button></p></pre>
+<img src="Aufgabe151.jpg" ></p> 
+
+<button  onclick="window.open('e-Funkt_Aufgabe151.html');" >Lösung</button></p>
 
 <!--//Aufgabe 152-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 152
+    <h2>Aufgabe 152</h2><p>
 
-y = -2sin x             
+y = -2sin(x)             
 
-x     1     4 oder 5,4    
-y             -1,5      
+<pre>x     1     4 oder 5,4    
+y     ?        -1,5</pre>      
 
-<img src="Aufgabe152.jpg" > 
+<img src="Aufgabe152.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe152.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe152.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 153-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 153
+  <h2>Aufgabe 153</h2><p>
 
-y = -2cos x            
+y = -2cos(x)</p>            
 
-x      1      <input type="text" id="Eintrag153" maxlength="3" size="1" style= background-color:yellow ></input>         
-y     -1,1     0,83         
+<pre>x      1         ?     
+y     -1,1     0,83</pre>         
 
-<button id="Pruef153" onclick="Aufgabe153()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag153" maxlength="3"  ></input>  <button id="Pruef153" onclick="Aufgabe153()">Prüfen</button></p>
 
 <img src="Aufgabe153.jpg" >
     
@@ -514,27 +574,27 @@ y     -1,1     0,83
                       
 <!--//Aufgabe 154-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 154
+    <h2>Aufgabe 154</h2><p>
 
-y = -2tan x              
+y = -2tan(x)</p>              
 
-x     1     2 oder 5,14
-y              4,4    
+<pre>x     1     2 oder 5,14
+y     ?        4,4</pre>    
 
-<img src="Aufgabe154.jpg" > 
+<img src="Aufgabe154.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe154.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe154.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 155-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 155
+  <h2>Aufgabe 155</h2><p>
 
-y = 0,6sin x           
+y = 0,6sin(x)</p>           
 
-x      4       <input type="text" id="Eintrag155" maxlength="4" size="1" style= background-color:yellow ></input>     
-y     -0,45     0,4    
+<pre>x      4         ?  
+y     -0,45     0,4</pre>    
 
-<button id="Pruef155" onclick="Aufgabe155()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag155" maxlength="4"  ></input>  <button id="Pruef155" onclick="Aufgabe155()">Prüfen</button></p>
 
 <img src="Aufgabe155.jpg" >
     
@@ -554,27 +614,27 @@ y     -0,45     0,4
                       
 <!--//Aufgabe 156-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 156
+    <h2>Aufgabe 156</h2><p>
 
-y = 0,6cos x          
+y = 0,6cos(x)</p>          
 
-x     4     0,84 oder 5,44
-y                0,4   
+<pre>x     4     0,84 oder 5,44
+y     ?          0,4 </pre>  
 
-<img src="Aufgabe156.jpg" >
+<img src="Aufgabe156.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe156.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe156.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 157-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 157
+  <h2>Aufgabe 157</h2><p>
 
-y = 0,6tan x            
+y = 0,6tan(x)</p>            
 
-x     4      <input type="text" id="Eintrag157" maxlength="4" size="1" style= background-color:yellow ></input>
-y     0,7     0,4    
+<pre>x     4        ?
+y     0,7     0,4</pre>    
 
-<button id="Pruef157" onclick="Aufgabe157()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag157" maxlength="4"  ></input> <button id="Pruef157" onclick="Aufgabe157()">Prüfen</button></p>
 
 <img src="Aufgabe157.jpg" >
     
@@ -594,27 +654,27 @@ y     0,7     0,4
                       
 <!--//Aufgabe 158-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 158
+    <h2>Aufgabe 158</h2><p>
 
-y = -0,6sin x          
+y = -0,6sin(x)</p>          
 
-x     4     0,73 oder 2,4
-y               -0,4
+<pre>x     4     0,73 oder 2,4
+y     ?         -0,4</pre>
 
-<img src="Aufgabe158.jpg" >
+<img src="Aufgabe158.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe158.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe158.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 159-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 159
+  <h2>Aufgabe 159</h2><p>
 
-y = -0,6cos x         
+y = -0,6cos(x)</p>         
 
-x     4      <input type="text" id="Eintrag159" maxlength="4" size="1" style= background-color:yellow ></input>        
-y     0,4     -0,4    
+<pre>x     4         ?   
+y     0,4     -0,4</pre>    
 
-<button id="Pruef159" onclick="Aufgabe159()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag159" maxlength="4"  ></input>   <button id="Pruef159" onclick="Aufgabe159()">Prüfen</button></p>
 
 <img src="Aufgabe159.jpg" >
     
@@ -634,27 +694,27 @@ y     0,4     -0,4
                       
 <!--//Aufgabe 160-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 160
+    <h2>Aufgabe 160</h2><p>
 
-y = -0,6tan x           
+y = -0,6tan(x)</p>           
 
-x     4     0,6 oder 3,74
-y               -0,4 
+<pre>x     4     0,6 oder 3,74
+y     ?         -0,4</pre> 
 
-<img src="Aufgabe160.jpg" >   
+<img src="Aufgabe160.jpg" ></p>   
 
-<button  onclick="window.open('e-Funkt_Aufgabe160.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe160.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 161-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 161
+  <h2>Aufgabe 161</h2><p>
 
-y = 2sin -x             
+y = 2sin(-x)</p>             
 
-x      1      <input type="text" id="Eintrag161" maxlength="3" size="1" style= background-color:yellow ></input>      
-y     -1,7     1,5    
+<pre>x      1        ?
+y     -1,7     1,5</pre>    
 
-<button id="Pruef161" onclick="Aufgabe161()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag161" maxlength="3"  ></input>     <button id="Pruef161" onclick="Aufgabe161()">Prüfen</button></p>
 
 <img src="Aufgabe161.jpg" >
     
@@ -674,27 +734,27 @@ y     -1,7     1,5
                       
 <!--//Aufgabe 162-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 162
+    <h2>Aufgabe 162</h2><p>
 
-y = 2cos -x            
+y = 2cos(-x)</p>            
 
-x     1     2 oder 4,3        
-y            -0,83   
+<pre>x     1     2 oder 4,3        
+y     ?      -0,83</pre>   
 
-<img src="Aufgabe162.jpg" > 
+<img src="Aufgabe162.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe162.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe162.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 163-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 163
+  <h2>Aufgabe 163</h2><p>
 
-y = 2tan -x              
+y = 2tan(-x)</p>              
 
-x      1      <input type="text" id="Eintrag163" maxlength="4" size="1" style= background-color:yellow ></input>          
-y     -3,1     4,4   
+<pre>x      1                
+y     -3,1     4,4</pre>   
 
-<button id="Pruef163" onclick="Aufgabe163()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag163" maxlength="4"  ></input> <button id="Pruef163" onclick="Aufgabe163()">Prüfen</button></p>
 
 <img src="Aufgabe163.jpg" >
     
@@ -714,27 +774,27 @@ y     -3,1     4,4
                       
 <!--//Aufgabe 164-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 164
+    <h2>Aufgabe 164</h2><p>
 
-y = 0,6sin -x          
+y = 0,6sin(-x)</p>          
 
-x     4     0,73 oder 2,4     
-y                -0,4    
+<pre>x     4     0,73 oder 2,4     
+y     ?          -0,4</pre>    
 
-<img src="Aufgabe164.jpg" >
+<img src="Aufgabe164.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe164.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe164.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 165-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 165
+  <h2>Aufgabe 165</h2><p>
 
-"y = 0,6cos -x         
+"y = 0,6cos(-x)</p>         
 
-x      4      <input type="text" id="Eintrag165" maxlength="4" size="1" style= background-color:yellow ></input>        
-y     -0,4     0,4   
+<pre>x      4        ?     
+y     -0,4     0,4</pre>   
 
-<button id="Pruef165" onclick="Aufgabe165()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag165" maxlength="4"  ></input>  <button id="Pruef165" onclick="Aufgabe165()">Prüfen</button></p>
 
 <img src="Aufgabe165.jpg" >
     
@@ -754,27 +814,27 @@ y     -0,4     0,4
                       
 <!--//Aufgabe 166-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 166
+    <h2>Aufgabe 166</h2><p>
 
-y = 0,6tan -x           
+y = 0,6tan(-x)</p>           
 
-x     4     0,6 oder 3,74
-y               -0,4    
+<pre>x     4     0,6 oder 3,74
+y     ?         -0,4</pre>    
 
-<img src="Aufgabe166.jpg" > 
+<img src="Aufgabe166.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe166.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe166.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 167-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 167
+  <h2>Aufgabe 167</h2><p>
 
-y = 2sin 2x            
+y = 2sin(2x)</p>            
 
-x     1      <input type="text" id="Eintrag167" maxlength="4" size="1" style= background-color:yellow ></input>     
-y     1,8     -1,5  
+<pre>x     1         ?  
+y     1,8     -1,5</pre>  
 
-<button id="Pruef167" onclick="Aufgabe167()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag167" maxlength="4"  ></input> <button id="Pruef167" onclick="Aufgabe167()">Prüfen</button></p>
 
 <img src="Aufgabe167.jpg" >
     
@@ -794,27 +854,28 @@ y     1,8     -1,5
                       
 <!--//Aufgabe 168-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 168
+    <h2>Aufgabe 168</h2><p>
 
-y = 2cos 2x    
+y = 2cos(2x)</p>    
 
-x     2     1 oder 2,14 oder 4,14 oder 5,3
-y                      -0,83    
+<pre>x     2     1 oder 2,14 oder 4,14 
+              oder 5,3
+y     ?              -0,83</pre>    
 
-<img src="Aufgabe168.jpg" > 
+<img src="Aufgabe168.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe168.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe168.html');" >Lösung</button></p>   
                       
 <!--//Aufgabe 169-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 169
+ <h2>Aufgabe 169</h2><p>
 
-y = 2tan 2x             
+y = 2tan(2x)</p>             
 
-x     2       <input type="text" id="Eintrag169" maxlength="4" size="1" style= background-color:yellow ></input>             
-y     2,3     -4,4  
+<pre>x     2         ?           
+y     2,3     -4,4</pre>  
 
-<button id="Pruef169" onclick="Aufgabe169()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag169" maxlength="4"  ></input> <button id="Pruef169" onclick="Aufgabe169()">Prüfen</button></p>
 
 <img src="Aufgabe169.jpg" >
     
@@ -834,27 +895,28 @@ y     2,3     -4,4
                       
 <!--//Aufgabe 170-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 170
+    <h2>Aufgabe 170</h2><p>
 
-y = 2sin(-2x)  
+y = 2sin(-2x)</p>  
 
-x     1     2 oder 2,7 oder 5,2 oder 5,86
-y                        1,5 
+<pre>x     1     2 oder 2,7 oder 5,2 
+              oder 5,86
+y     ?               1,5</pre> 
 
 <img src="Aufgabe170.jpg" >
 
-<button  onclick="window.open('e-Funkt_Aufgabe170.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe170.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 171-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 171
+  <h2>Aufgabe 171</h2><p>
 
-y = 2cos(-2x)         
+y = 2cos(-2x)</p>         
 
-x      2       <input type="text" id="Eintrag171" maxlength="4" size="1" style= background-color:yellow ></input>       
-y     -1,3     -0,83   
+<pre>x      2         ?    
+y     -1,3     -0,83</pre>   
 
-<button id="Pruef171" onclick="Aufgabe171()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag171" maxlength="4"  ></input>  <button id="Pruef171" onclick="Aufgabe171()">Prüfen</button></p>
 
 <img src="Aufgabe171.jpg" >
     
@@ -874,27 +936,28 @@ y     -1,3     -0,83
                       
 <!--//Aufgabe 172-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 172
+    <h2>Aufgabe 172</h2><p>
 
-y = 2tan(-2x)  
+y = 2tan(-2x)</p>  
 
-x     2     1 oder 2,6 oder 4,14 oder 5,7
-y                       4,4   
+<pre>x     2     1 oder 2,6 oder 4,14 
+              oder 5,7
+y     ?               4,4</pre>   
 
-<img src="Aufgabe172.jpg" > 
+<img src="Aufgabe172.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe172.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe172.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 173-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 173
+  <h2>Aufgabe 173</h2><p>
 
-y = -2sin 2x            
+y = -2sin(2x)</p>           
 
-x      1      <input type="text" id="Eintrag173" maxlength="3" size="1" style= background-color:yellow ></input>      
-y     -1,8     1,5  
+<pre>x      1        ?    
+y     -1,8     1,5</pre>  
  
-<button id="Pruef173" onclick="Aufgabe173()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag173" maxlength="3"  ></input> <button id="Pruef173" onclick="Aufgabe173()">Prüfen</button></p>
 
 <img src="Aufgabe173.jpg" >
     
@@ -914,27 +977,28 @@ y     -1,8     1,5
                       
 <!--//Aufgabe 174-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 174
+    <h2>Aufgabe 174</h2><p>
 
-y = -2cos 2x  
+y = -2cos(2x)</p>  
 
-x     1     0,5 oder 2,6 oder 3,7 oder 5,8
-y                      -1
+<pre>x     1     0,5 oder 2,6 oder 3,7 
+                oder 5,8
+y     ?               -1</pre>
 
-<img src="Aufgabe174.jpg" >
+<img src="Aufgabe174.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe174.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe174.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 175-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 175
+  <h2>Aufgabe 175</h2><p>
 
-y = -2tan 2x             
+y = -2tan(2x)</p>             
 
-x      1     <input type="text" id="Eintrag175" maxlength="3" size="1" style= background-color:yellow ></input>
-y     4,4     -2       
+<pre>x      1       ?
+y     4,4     -2</pre>       
 
-<button id="Pruef175" onclick="Aufgabe175()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag175" maxlength="3"  ></input> <button id="Pruef175" onclick="Aufgabe175()">Prüfen</button></p>
 
 <img src="Aufgabe175.jpg" >
 
@@ -953,27 +1017,28 @@ y     4,4     -2
                       
 <!--//Aufgabe 176-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 176
+    <h2>Aufgabe 176</h2><p>
 
-y = -2sin(-2x) 
+y = -2sin(-2x)</p> 
 
-x     1     2 oder 2,7 oder 5,1 oder 5,9
-y                      -1,5 
+<pre>x     1     2 oder 2,7 oder 5,1 
+              oder 5,9
+y     ?             -1,5</pre> 
 
-<img src="Aufgabe176.jpg" >
+<img src="Aufgabe176.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe176.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe176.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 177-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 177
+  <h2>Aufgabe 177</h2><p>
 
-y = -2cos(-2x)         
+y = -2cos(-2x)</p>         
 
-x      1      <input type="text" id="Eintrag177" maxlength="3" size="1" style= background-color:yellow ></input>        
-y     0,83     -1    
+<pre>x      1        ?   
+y     0,83     -1</pre>    
 
-<button id="Pruef177" onclick="Aufgabe177()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag177" maxlength="3"  ></input>    <button id="Pruef177" onclick="Aufgabe177()">Prüfen</button></p>
 
 <img src="Aufgabe177.jpg" >
     
@@ -994,27 +1059,28 @@ y     0,83     -1
 
 <!--//Aufgabe 178-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 178
+    <h2>Aufgabe 178</h2><p>
 
-y = -2tan(-2x)   
+y = -2tan(-2x)</p>   
 
-x     1     0,4 oder 2 oder 3,5 oder 5,1
-y                       2 
+<pre>x     1     0,4 oder 2 oder 3,5 
+                oder 5,1
+y     ?               2</pre> 
 
-<img src="Aufgabe178.jpg" >
+<img src="Aufgabe178.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe178.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe178.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 179-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 179
+  <h2>Aufgabe 179</h2><p>
 
-y = 0,6sin 0,6x
+y = 0,6sin(0,6x)</p>
 
-x     1       <input type="text" id="Eintrag179" maxlength="3" size="1" style= background-color:yellow ></input>    
-y     0,34     -0,3    
+<pre>x     1          ?
+y     0,34     -0,3</pre>    
 
-<button id="Pruef179" onclick="Aufgabe179()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag179" maxlength="3"  ></input>   <button id="Pruef179" onclick="Aufgabe179()">Prüfen</button></p>
 
 <img src="Aufgabe179.jpg" >
     
@@ -1034,27 +1100,27 @@ y     0,34     -0,3
                       
 <!--//Aufgabe 180-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 180
+    <h2>Aufgabe 180</h2><p>
 
-y = 0,6cos 0,6x            
+y = 0,6cos(0,6x)</p>            
 
-x     4     1 
-y           0,5    
+<pre>x     4     1 
+y     ?     0,5</pre>    
 
-<img src="Aufgabe180.jpg" > 
+<img src="Aufgabe180.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe180.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe180.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 181-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 181
+  <h2>Aufgabe 181</h2><p>
 
-y = 0,6tan 0,6x
+y = 0,6tan(0,6x)</p>
 
-x      4      <input type="text" id="Eintrag181" maxlength="3" size="1" style= background-color:yellow ></input>
-y     -0,55     1 
+<pre>x      4        ?
+y     -0,55     1</pre> 
 
-<button id="Pruef181" onclick="Aufgabe181()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag181" maxlength="3"  ></input> <button id="Pruef181" onclick="Aufgabe181()">Prüfen</button></p>
 
 <img src="Aufgabe181.jpg" >
     
@@ -1074,27 +1140,27 @@ y     -0,55     1
 
 <!--//Aufgabe 182-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 182
+    <h2>Aufgabe 182</h2><p>
 
-y = 0,6sin(-0,6x)
+y = 0,6sin(-0,6x)</p>
 
-x     1     6,1 
-y           0,3 
+<pre>x     1     6,1 
+y     ?     0,3</pre> 
 
-<img src="Aufgabe182.jpg" >
+<img src="Aufgabe182.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe182.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe182.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 183-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 183
+  <h2>Aufgabe 183</h2><p>
 
-y = 0,6cos(-0,6x)
+y = 0,6cos(-0,6x)</p>
 
-x      4       <input type="text" id="Eintrag183" maxlength="1" size="1" style= background-color:yellow ></input>       
-y     -0,44     0,5  
+<pre>x      4         ?    
+y     -0,44     0,5</pre>  
 
-<button id="Pruef183" onclick="Aufgabe183()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag183" maxlength="1"  ></input>  <button id="Pruef183" onclick="Aufgabe183()">Prüfen</button></p>
 
 <img src="Aufgabe183.jpg" >
     
@@ -1114,27 +1180,27 @@ y     -0,44     0,5
                       
 <!--//Aufgabe 184-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 184
+    <h2>Aufgabe 184</h2><p>
 
-y = 0,6tan(-0,6x)
+y = 0,6tan(-0,6x)</p>
 
-x     4     1,7    
-y          -1  
+<pre>x     4     1,7    
+y     ?    -1</pre>  
 
-<img src="Aufgabe184.jpg" >
+<img src="Aufgabe184.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe184.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe184.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 185-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 185
+  <h2>Aufgabe 185</h2><p>
 
-y = -0,6sin 0,6x
+y = -0,6sin(0,6x)</p>
 
-x      1       <input type="text" id="Eintrag185" maxlength="3" size="1" style= background-color:yellow ></input>
-y     -0,34     0,3  
+<pre>x      1         ?
+y     -0,34     0,3</pre>  
 
-<button id="Pruef185" onclick="Aufgabe185()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag185" maxlength="3"  ></input> <button id="Pruef185" onclick="Aufgabe185()">Prüfen</button></p>
 
 <img src="Aufgabe185.jpg" >
 
@@ -1154,27 +1220,27 @@ y     -0,34     0,3
                       
 <!--//Aufgabe 186-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 186
+    <h2>Aufgabe 186</h2><p>
 
-y = -0,6cos 0,6x
+y = -0,6cos(0,6x)</p>
 
-x     4      1 
-y           -0,5 
+<pre>x     4      1 
+y     ?      -0,5</pre> 
 
-<img src="Aufgabe186.jpg" >
+<img src="Aufgabe186.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe186.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe186.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 187-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 187
+  <h2>Aufgabe 187</h2><p>
 
-y = -0,6tan 0,6x
+y = -0,6tan(0,6x)</p>
 
-x     4       <input type="text" id="Eintrag187" maxlength="3" size="1" style= background-color:yellow ></input>
-y     0,55     -1 
+<pre>x     4         ?
+y     0,55     -1</pre> 
 
-<button id="Pruef187" onclick="Aufgabe187()">Prüfen</button> </p></pre>
+? = <input type="text" id="Eintrag187" maxlength="3"  ></input> <button id="Pruef187" onclick="Aufgabe187()">Prüfen</button> </p>
 
 <img src="Aufgabe187.jpg" >
 
@@ -1194,27 +1260,27 @@ y     0,55     -1
                       
 <!--//Aufgabe 188-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 188
+    <h2>Aufgabe 188</h2><p>
 
-y = -0,6sin(-0,6x)
+y = -0,6sin(-0,6x)</p>
 
-x     1     6,1 
-y          -0,3
+<pre>x     1     6,1 
+y     ?    -0,3</pre>
 
-<img src="Aufgabe188.jpg" >
+<img src="Aufgabe188.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe188.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe188.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 189-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 189
+  <h2>Aufgabe 189</h2><p>
 
-y = -0,6cos(-0,6x)
+y = -0,6cos(-0,6x)</p>
 
-x     4       <input type="text" id="Eintrag189" maxlength="1" size="1" style= background-color:yellow ></input>
-y     0,44     -0,5 
+<pre>x     4          ?
+y     0,44     -0,5</pre> 
 
-<button id="Pruef189" onclick="Aufgabe189()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag189" maxlength="1"  ></input> <button id="Pruef189" onclick="Aufgabe189()">Prüfen</button></p>
 
 <img src="Aufgabe189.jpg" >
     
@@ -1234,27 +1300,27 @@ y     0,44     -0,5
                       
 <!--//Aufgabe 190-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 190
+    <h2>Aufgabe 190</h2><p>
 
-y = -0,6tan(-0,6x)
+y = -0,6tan(-0,6x)</p>
 
-x     4     1,7  
-y           1 
+<pre>x     4     1,7  
+y     ?      1</pre> 
 
-<img src="Aufgabe190.jpg" >
+<img src="Aufgabe190.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe190.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe190.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 191-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 191
+  <h2>Aufgabe 191</h2><p>
 
-y = sin(x) - 1
+y = sin(x) - 1</p>
 
-x     4,26   <input type="text" id="Eintrag191" maxlength="3" size="1" style= background-color:yellow ></input>
-y    -1,9      0  
+<pre>x     4,26     ?
+y    -1,9      0</pre>  
 
-<button id="Pruef191" onclick="Aufgabe191()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag191" maxlength="3"  ></input> <button id="Pruef191" onclick="Aufgabe191()">Prüfen</button></p>
 
 <img src="Aufgabe191.jpg" >
 
@@ -1274,27 +1340,27 @@ y    -1,9      0
                       
 <!--//Aufgabe 192-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 192
+    <h2>Aufgabe 192</h2><p>
 
-y = cos (x) + 2          
+y = cos(x) + 2</p>          
 
-x     π/2     2 oder 4,3
-y               1,6
+<pre>x     π/2     2 oder 4,3
+y      ?        1,6</pre>
 
-<img src="Aufgabe192.jpg" >
+<img src="Aufgabe192.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe192.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('e-Funkt_Aufgabe192.html');" >Lösung</button></p>
 
 <!--//Aufgabe 193-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 193
+ <h2>Aufgabe 193</h2><p>
 
-y = tan (x) + 1
+y = tan(x) + 1</p>
 
-x      2     <input type="text" id="Eintrag193" maxlength="4" size="1" style= background-color:yellow ></input>
-y     -1,2     0 
+<pre>x      2       ?
+y     -1,2     0</pre> 
 
-<button id="Pruef193" onclick="Aufgabe193()">Prüfen</button> </p></pre>
+? = <input type="text" id="Eintrag193" maxlength="4"  ></input> <button id="Pruef193" onclick="Aufgabe193()">Prüfen</button> </p>
 
 <img src="Aufgabe193.jpg" >
 
@@ -1314,26 +1380,27 @@ y     -1,2     0
                       
 <!--//Aufgabe 194-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 194
+    <h2>Aufgabe 194</h2><p>
 
-y = sin (-x) + 1
-x     1     4,4 oder 5
-y               1,96   
+y = sin(-x) + 1</p>
 
-<img src="Aufgabe194.jpg" >
+<pre>x     1     4,4 oder 5
+y     ?         1,96</pre>   
 
-<button  onclick="window.open('e-Funkt_Aufgabe194.html');" >Lösung</button></p></pre>   
+<img src="Aufgabe194.jpg" ></p>
+
+<button  onclick="window.open('e-Funkt_Aufgabe194.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 195-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 195
+  <h2>Aufgabe 195</h2><p>
 
-y = cos (-x) - 2
+y = cos(-x) - 2</p>
 
-x      1        <input type="text" id="Eintrag195" maxlength="3" size="1" style= background-color:yellow ></input>
-y     -1,46     -2,42  
+<pre>x      1          ?
+y     -1,46     -2,42</pre>  
 
-<button id="Pruef195" onclick="Aufgabe195()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag195" maxlength="3"  ></input> <button id="Pruef195" onclick="Aufgabe195()">Prüfen</button></p>
 
 <img src="Aufgabe195.jpg" >
     
@@ -1353,27 +1420,27 @@ y     -1,46     -2,42
                       
 <!--//Aufgabe 196-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 196
+    <h2>Aufgabe 196</h2><p>
 
-y = tan (-x) - 1          
+y = tan(-x) - 1</p>          
 
-x     0,78     2,36 oder 5,5
-y                    0
+<pre>x     0,78     2,36 oder 5,5
+y       ?             0</pre>
 
-<img src="Aufgabe196.jpg" >
+<img src="Aufgabe196.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe196.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe196.html');" >Lösung</button></p>   
                       
 <!--//Aufgabe 197-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 197
+  <h2>Aufgabe 197</h2><p>
 
-y = 2sin (x) - 1
+y = 2sin(x) - 1</p>
 
-x     1      <input type="text" id="Eintrag197" maxlength="3" size="1" style= background-color:yellow ></input>     
-y     0,7     -2  
+<pre>x     1        ?   
+y     0,7     -2</pre>  
 
-<button id="Pruef197" onclick="Aufgabe197()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag197" maxlength="3"  ></input> <button id="Pruef197" onclick="Aufgabe197()">Prüfen</button></p>
 
 <img src="Aufgabe197.jpg" >
 
@@ -1392,27 +1459,27 @@ y     0,7     -2
                       
 <!--//Aufgabe 198-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 198
+    <h2>Aufgabe 198</h2><p>
 
-y = 3cos (x) + 1        
+y = 3cos(x) + 1</p>        
 
-x     1     0 oder 2π
-y              4
+<pre>x     1     0 oder 2π
+y     ?        4</pre>
 
-<img src="Aufgabe198.jpg" >
+<img src="Aufgabe198.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe198.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('e-Funkt_Aufgabe198.html');" >Lösung</button></p>
 
 <!--//Aufgabe 199-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 199
+  <h2>Aufgabe 199</h2><p>
 
-y = 0,5tan (x) - 2
+y = 0,5tan(x) - 2</p>
 
-x      1     <input type="text" id="Eintrag199" maxlength="3" size="1" style= background-color:yellow ></input>
-y     -1,2     3 
+<pre>x      1       ?
+y     -1,2     3</pre> 
 
-<button id="Pruef199" onclick="Aufgabe199()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag199" maxlength="3"  ></input> <button id="Pruef199" onclick="Aufgabe199()">Prüfen</button></p>
 
 <img src="Aufgabe199.jpg" >
 
@@ -1431,27 +1498,27 @@ y     -1,2     3
                       
 <!--//Aufgabe 200-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 200
+    <h2>Aufgabe 200</h2><p>
 
-y = sin (x + 1)
+y = sin(x + 1)</p>
 
-x      2      2,6 oder 4,8
-y                 -0,5 
+<pre>x      2      2,6 oder 4,8
+y      ?          -0,5</pre> 
 
-<img src="Aufgabe200.jpg" >
+<img src="Aufgabe200.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe200.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe200.html');" >Lösung</button></p> 
                       
 <!--//Aufgabe 201-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 201
+  <h2>Aufgabe 201</h2><p>
 
-y = cos (x - 2
+y = cos(x - 2)</p>
 
-x     1        <input type="text" id="Eintrag201" maxlength="2" size="1" style= background-color:yellow ></input>
-y     0,54     -0,4 
+<pre>x     1          ?
+y     0,54     -0,4</pre> 
 
-<button id="Pruef201" onclick="Aufgabe201()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag201" maxlength="2"  ></input> <button id="Pruef201" onclick="Aufgabe201()">Prüfen</button></p>
 
 <img src="Aufgabe201.jpg" >
 
@@ -1470,27 +1537,27 @@ y     0,54     -0,4
                       
 <!--//Aufgabe 202-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 202
+    <h2>Aufgabe 202</h2><p>
 
-y = tan (x - 1)
+y = tan(x - 1)</p>
 
-x     2     0,2 oder 3,36
-y                -1 
+<pre>x     2     0,2 oder 3,36
+y     ?          -1</pre> 
 
-<img src="Aufgabe202.jpg" >
+<img src="Aufgabe202.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe202.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe202.html');" >Lösung</button></p>   
                       
 <!--//Aufgabe 203-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 203
+  <h2>Aufgabe 203</h2><p>
 
-y = -sin (x - 1)
+y = -sin(x - 1)</p>
 
-x     5       <input type="text" id="Eintrag203" maxlength="3" size="1" style= background-color:yellow ></input>    
-y     0,76     -0,5   
+<pre>x     5          ?
+y     0,76     -0,5</pre>   
 
-<button id="Pruef203" onclick="Aufgabe203()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag203" maxlength="3"  ></input>  <button id="Pruef203" onclick="Aufgabe203()">Prüfen</button></p>
 
 <img src="Aufgabe203.jpg" >
 
@@ -1509,27 +1576,27 @@ y     0,76     -0,5
                       
 <!--//Aufgabe 204-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 204
+    <h2>Aufgabe 204</h2><p>
 
-y = -cos (x + 2)         
+y = -cos(x + 2)</p>         
 
-x      2     3,12 oder 5,4
-y                 -0,4 
+<pre>x      2     3,12 oder 5,4
+y      ?          -0,4</pre> 
 
-<img src="Aufgabe204.jpg" >
+<img src="Aufgabe204.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe204.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe204.html');" >Lösung</button></p>   
                       
 <!--//Aufgabe 205-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 205
+  <h2>Aufgabe 205</h2><p>
 
-y = -tan (x - 2)
+y = -tan(x - 2)</p>
 
-x     2    <input type="text" id="Eintrag205" maxlength="3" size="1" style= background-color:yellow ></input>
-y     0     -1   
+<pre>x     2      ?
+y     0     -1</pre>   
 
-<button id="Pruef205" onclick="Aufgabe205()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag205" maxlength="3"  ></input> <button id="Pruef205" onclick="Aufgabe205()">Prüfen</button></p>
 
 <img src="Aufgabe205.jpg" >
 
@@ -1548,28 +1615,27 @@ y     0     -1
                       
 <!--//Aufgabe 206-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 206
+    <h2>Aufgabe 206</h2><p>
 
-y = sin (x + 1) - 1
+y = sin(x + 1) - 1</p>
 
-x     2     2,1 oder 5,3
-y               -1  
+<pre>x     2     2,1 oder 5,3
+y     ?         -1</pre>  
 
-<img src="Aufgabe206.jpg" >
+<img src="Aufgabe206.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe206.html');" >Lösung</button></p></pre>   
-
+<button  onclick="window.open('e-Funkt_Aufgabe206.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 207-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 207
+  <h2>Aufgabe 207</h2><p>
 
-y = cos (x - 1) + 2
+y = cos(x - 1) + 2</p>
 
-x     1    <input type="text" id="Eintrag207" maxlength="4" size="1" style= background-color:yellow ></input>
-y     3     2,4  
+<pre>x     1      ?
+y     3     2,4</pre>  
 
-<button id="Pruef207" onclick="Aufgabe207()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag207" maxlength="4"  ></input> <button id="Pruef207" onclick="Aufgabe207()">Prüfen</button></p>
 
 <img src="Aufgabe207.jpg" >
 
@@ -1588,28 +1654,29 @@ y     3     2,4
                       
 <!--//Aufgabe 208-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 208
+    <h2>Aufgabe 208</h2><p>
 
-y = tan (x - 2) + 1
+y = tan(x - 2) + 1</p>
 
-x     2     2,8 oder 5,9
-y                2   
+<pre>x     2     2,8 oder 5,9
+y     ?          2</pre>   
 
-<img src="Aufgabe208.jpg" > 
+<img src="Aufgabe208.jpg" ></p> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe208.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe208.html');" >Lösung</button></p>   
 
 
 <!--//Aufgabe 209-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 209
+  <h2>Aufgabe 209</h2><p>
 
-y = sin² x   
+y = sin<sup>2</sup>(x)</p>   
 
-x     2     0,785 oder 2,4 oder 3,9 oder 5,5
-y   <input type="text" id="Eintrag209" maxlength="4" size="1" style= background-color:yellow ></input>                0,5  
+<pre>x     2     0,785 oder 2,4 oder 3,9 
+                  oder 5,5
+y     ?             0,5</pre>  
 
-<button id="Pruef209" onclick="Aufgabe209()">Prüfen</button></p></pre>
+? = <input type="text" id="Eintrag209" maxlength="4"  ></input> <button id="Pruef209" onclick="Aufgabe209()">Prüfen</button></p>
 
 <img src="Aufgabe209.jpg" >
 
@@ -1628,16 +1695,16 @@ y   <input type="text" id="Eintrag209" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 210-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 210
+    <h2>Aufgabe 210</h2><p>
 
-y = cos² x          
+y = cos<sup>2</sup>(x)          
 
-x     2               
-y     0,17     0,5 
+<pre>x     2         ?        
+y     0,17     0,5</pre> 
 
-<img src="Aufgabe210.jpg" >
+<img src="Aufgabe210.jpg" ></p>
 
-<button  onclick="window.open('e-Funkt_Aufgabe210.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe210.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 211-->
 
@@ -1646,9 +1713,9 @@ y     0,17     0,5
 y = tan² x  
 
 x     2     1 oder 2,1 oder 4,2 oder 5,2
-y   <input type="text" id="Eintrag211" maxlength="3" size="1" style= background-color:yellow ></input>               3 
+y   <input type="text" id="Eintrag211" maxlength="3"  ></input>               3 
 
-<button id="Pruef211" onclick="Aufgabe211()">Prüfen</button></p></pre>
+<button id="Pruef211" onclick="Aufgabe211()">Prüfen</button></p>
 
 <img src="Aufgabe211.jpg" >
 
@@ -1676,7 +1743,7 @@ y     0,17     -0,5
 
 <img src="Aufgabe212.jpg" >
 
-<button  onclick="window.open('e-Funkt_Aufgabe212.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('e-Funkt_Aufgabe212.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 213-->
 
@@ -1685,9 +1752,9 @@ y     0,17     -0,5
 y = cos² (x) + 1  
 
 x     2     0,785 oder 2,4 oder 3,9 oder 5,5
-y   <input type="text" id="Eintrag213" maxlength="4" size="1" style= background-color:yellow ></input>                  1,5 
+y   <input type="text" id="Eintrag213" maxlength="4"  ></input>                  1,5 
 
-<button id="Pruef213" onclick="Aufgabe213()">Prüfen</button></p></pre>
+<button id="Pruef213" onclick="Aufgabe213()">Prüfen</button></p>
 
 <img src="Aufgabe213.jpg" >
 
@@ -1715,7 +1782,7 @@ y     2,8     1
 
 <img src="Aufgabe214.jpg" >
 
-<button  onclick="window.open('e-Funkt_Aufgabe214.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('e-Funkt_Aufgabe214.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 215-->
 
@@ -1724,9 +1791,9 @@ y     2,8     1
 y = sin x + cos x
 
 x     2     1,75 oder 6,1
-y   <input type="text" id="Eintrag215" maxlength="4" size="1" style= background-color:yellow ></input>        0,8  
+y   <input type="text" id="Eintrag215" maxlength="4"  ></input>        0,8  
 
-<button id="Pruef215" onclick="Aufgabe215()">Prüfen</button></p></pre>
+<button id="Pruef215" onclick="Aufgabe215()">Prüfen</button></p>
 
 <img src="Aufgabe215.jpg" >
 
@@ -1754,7 +1821,7 @@ y     1,3     0,8
 
 <img src="Aufgabe216.jpg" >
 
-<button  onclick="window.open('e-Funkt_Aufgabe216.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('e-Funkt_Aufgabe216.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 217-->
 
@@ -1763,9 +1830,9 @@ y     1,3     0,8
 y = sin x + 2 cos x       
 
 x     1     1,57 oder 5,6
-y   <input type="text" id="Eintrag217" maxlength="3" size="1" style= background-color:yellow ></input>         1 
+y   <input type="text" id="Eintrag217" maxlength="3"  ></input>         1 
 
-<button id="Pruef217" onclick="Aufgabe217()">Prüfen</button></p></pre>
+<button id="Pruef217" onclick="Aufgabe217()">Prüfen</button></p>
 
 <img src="Aufgabe217.jpg" >
 
@@ -1793,7 +1860,7 @@ y     -0,24     1
 
 <img src="Aufgabe218.jpg" >
 
-<button  onclick="window.open('e-Funkt_Aufgabe218.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('e-Funkt_Aufgabe218.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 219-->
 
@@ -1802,9 +1869,9 @@ y     -0,24     1
 y = 3 sin x - 4 cos x
 
 x     2     1,12 oder 3,9
-y   <input type="text" id="Eintrag219" maxlength="3" size="1" style= background-color:yellow ></input>         1  
+y   <input type="text" id="Eintrag219" maxlength="3"  ></input>         1  
 
-<button id="Pruef219" onclick="Aufgabe219()">Prüfen</button></p></pre>
+<button id="Pruef219" onclick="Aufgabe219()">Prüfen</button></p>
 
 <img src="Aufgabe219.jpg" >
 
@@ -1832,7 +1899,7 @@ y     -0,9     1
 
 <img src="Aufgabe220.jpg" >
 
-<button  onclick="window.open('e-Funkt_Aufgabe220.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('e-Funkt_Aufgabe220.html');" >Lösung</button></p>
 
  
 <!--//Aufgabe 221-->
@@ -1843,7 +1910,7 @@ Berechnen Sie die Amplitude von:
 
 y = - 2 sin x + √5 cos x     
 
-Amplitude = <input type="text" id="Eintrag221" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef221" onclick="Aufgabe221()">Prüfen</button></p></pre>
+Amplitude = <input type="text" id="Eintrag221" maxlength="1"  ></input> <button id="Pruef221" onclick="Aufgabe221()">Prüfen</button></p>
 
 <img src="Aufgabe221.jpg" >
 
@@ -1870,7 +1937,7 @@ y = 2 sin 2x - 3 cos 2x
 
 <img src="Aufgabe222.jpg" >
 
-<button  onclick="window.open('e-Funkt_Aufgabe222.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('e-Funkt_Aufgabe222.html');" >Lösung</button></p>  
 
 
 <!--//Aufgabe 223-->
@@ -1881,7 +1948,7 @@ Berechnen Sie die Amplitude von:
 
 y = (3/2) sin x + 2 cos x     
 
-Amplitude = <input type="text" id="Eintrag223" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef223" onclick="Aufgabe223()">Prüfen</button></p></pre>
+Amplitude = <input type="text" id="Eintrag223" maxlength="3"  ></input> <button id="Pruef223" onclick="Aufgabe223()">Prüfen</button></p>
 
 <img src="Aufgabe223.jpg" >
 
@@ -1912,7 +1979,7 @@ y                1
 
 <img src="Aufgabe224.jpg"> 
 
-<button  onclick="window.open('e-Funkt_Aufgabe224.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('e-Funkt_Aufgabe224.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 225-->
 
@@ -1920,10 +1987,10 @@ y                1
 
 y = sin 2x - 2 sin x
 
-x      2     <input type="text" id="Eintrag225" maxlength="4" size="1" style= background-color:yellow ></input> 
+x      2     <input type="text" id="Eintrag225" maxlength="4"  ></input> 
 y     -2,6     1 
 
-<button id="Pruef225" onclick="Aufgabe225()">Prüfen</button></p></pre>
+<button id="Pruef225" onclick="Aufgabe225()">Prüfen</button></p>
 
 <img src="Aufgabe225.jpg">
 
@@ -1951,7 +2018,7 @@ y                2
 
 <img src="Aufgabe226.jpg">
 
-<button  onclick="window.open('e-Funkt_Aufgabe226.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('e-Funkt_Aufgabe226.html');" >Lösung</button></p>  
 
 
 <!--//Aufgabe 227-->
@@ -1960,10 +2027,10 @@ y                2
 
 y = sin x - cos 2x
 
-x      4      <input type="text" id="Eintrag227" maxlength="4" size="1" style= background-color:yellow ></input>     
+x      4      <input type="text" id="Eintrag227" maxlength="4"  ></input>     
 y     -0,61     1 
 
-<button id="Pruef227" onclick="Aufgabe227()">Prüfen</button></p></pre>
+<button id="Pruef227" onclick="Aufgabe227()">Prüfen</button></p>
 
 <img src="Aufgabe227.jpg">
 
@@ -1991,17 +2058,17 @@ y                    1
 
 <img src="Aufgabe228.jpg" >
 
-<button  onclick="window.open('e-Funkt_Aufgabe228.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('e-Funkt_Aufgabe228.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 229-->
 
   <pre><p class ="Aufgabe" >Aufgabe 229
 
 y = sin x + cos 2x
-x     2        <input type="text" id="Eintrag229" maxlength="4" size="1" style= background-color:yellow ></input>
+x     2        <input type="text" id="Eintrag229" maxlength="4"  ></input>
 y     0,256     -1  
 
-<button id="Pruef229" onclick="Aufgabe229()">Prüfen</button></p></pre>
+<button id="Pruef229" onclick="Aufgabe229()">Prüfen</button></p>
 
 <img src="Aufgabe229.jpg" >
 
@@ -2029,7 +2096,7 @@ y                 1
 
 <img src="Aufgabe230.jpg" >
 
-<button  onclick="window.open('e-Funkt_Aufgabe230.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('e-Funkt_Aufgabe230.html');" >Lösung</button></p>  
 
 
 <!--//Aufgabe 231-->
@@ -2038,10 +2105,10 @@ y                 1
 
 y = sin² x + cos x
 
-x     2       <input type="text" id="Eintrag231" maxlength="4" size="1" style= background-color:yellow ></input>
+x     2       <input type="text" id="Eintrag231" maxlength="4"  ></input>
 y     0,41     0,8
 
-<button id="Pruef231" onclick="Aufgabe231()">Prüfen</button></p></pre>
+<button id="Pruef231" onclick="Aufgabe231()">Prüfen</button></p>
 
 <img src="Aufgabe231.jpg" >
 
@@ -2069,7 +2136,7 @@ y                 1
 
 <img src="Aufgabe232.jpg" >
 
-<button  onclick="window.open('e-Funkt_Aufgabe232.html');" >Lösung</button></p></pre>  
+<button  onclick="window.open('e-Funkt_Aufgabe232.html');" >Lösung</button></p>  
 
 
 <!--//Aufgabe 233-->
@@ -2079,7 +2146,7 @@ y                 1
 Bestimmen Sie c für den dargestellten Graphen 
 der Form y = a * sin(b * (x + c)) + d     
 
-c = <input type="text" id="Eintrag233" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef233" onclick="Aufgabe233()">Prüfen</button></p></pre>
+c = <input type="text" id="Eintrag233" maxlength="1"  ></input> <button id="Pruef233" onclick="Aufgabe233()">Prüfen</button></p>
 
 <img src="Aufgabe233.jpg" >
 
@@ -2105,7 +2172,7 @@ der Form y = a * sin(b * (x + c)) + d
 
 <img src="Aufgabe234.jpg" >
 
-<button  onclick="window.open('e-Funkt_Aufgabe234.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe234.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 235-->
 
@@ -2114,7 +2181,7 @@ der Form y = a * sin(b * (x + c)) + d
 Bestimmen Sie c für den dargestellten Graphen 
 der Form y = a * sin(b * (x + c)) + d   
 
-<input type="text" id="Eintrag235" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef235" onclick="Aufgabe235()">Prüfen</button></p></pre> 
+<input type="text" id="Eintrag235" maxlength="2"  ></input> <button id="Pruef235" onclick="Aufgabe235()">Prüfen</button></p> 
 
 <img src="Aufgabe235.jpg" >
 
@@ -2140,7 +2207,7 @@ der Form y = a * sin(b * (x + c)) + d
 
 <img src="Aufgabe236.jpg" >
 
-<button  onclick="window.open('e-Funkt_Aufgabe236.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe236.html');" >Lösung</button></p> 
 
 
 <!--//Aufgabe 237-->
@@ -2150,7 +2217,7 @@ der Form y = a * sin(b * (x + c)) + d
 Bestimmen Sie b für den dargestellten Graphen 
 der Form y = a * sin(b * (x + c)) + d       
 
-b = <input type="text" id="Eintrag237" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef237" onclick="Aufgabe237()">Prüfen</button></p></pre>
+b = <input type="text" id="Eintrag237" maxlength="1"  ></input> <button id="Pruef237" onclick="Aufgabe237()">Prüfen</button></p>
 
 <img src="Aufgabe237.jpg" >
 
@@ -2176,7 +2243,7 @@ der Form y = a * sin(b * (x + c)) + d
 
 <img src="Aufgabe238.jpg" >
                         
-<button  onclick="window.open('e-Funkt_Aufgabe238.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe238.html');" >Lösung</button></p> 
 
 
 <!--//Aufgabe 239-->
@@ -2186,7 +2253,7 @@ der Form y = a * sin(b * (x + c)) + d
 Bestimmen Sie d für den dargestellten Graphen 
 der Form y = a * sin(b * (x + c)) + d      
 
-d = <input type="text" id="Eintrag239" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef239" onclick="Aufgabe239()">Prüfen</button></p></pre>
+d = <input type="text" id="Eintrag239" maxlength="3"  ></input> <button id="Pruef239" onclick="Aufgabe239()">Prüfen</button></p>
 
 <img src="Aufgabe239.jpg" >
 
@@ -2212,7 +2279,7 @@ der Form y = a * sin(b * (x + c)) + d
 
 <img src="Aufgabe240.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe240.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe240.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 241-->
 
@@ -2221,7 +2288,7 @@ der Form y = a * sin(b * (x + c)) + d
 Bestimmen Sie a für den dargestellten Graphen 
 der Form y = a * sin(b * (x + c)) + d        
 
-a = <input type="text" id="Eintrag241" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef241" onclick="Aufgabe241()">Prüfen</button></p></pre>
+a = <input type="text" id="Eintrag241" maxlength="1"  ></input> <button id="Pruef241" onclick="Aufgabe241()">Prüfen</button></p>
 
 <img src="Aufgabe241.jpg" >
 
@@ -2247,7 +2314,7 @@ der Form y = a * sin(b * (x + c)) + d
 
 <img src="Aufgabe242.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe242.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('e-Funkt_Aufgabe242.html');" >Lösung</button></p>
 
 <p class="Aufgabe"><span style= "background-color:white;">Bestimmen Sie die angegebenen Parameter <br> 
 für die dargestellten Graphen der Form <br> y = a * sin(b * (x + c)) + d</span></p>
@@ -2258,7 +2325,7 @@ für die dargestellten Graphen der Form <br> y = a * sin(b * (x + c)) + d</span>
 
 <img src="Aufgabe243.jpg" >
 
-a = <input type="text" id="Eintrag243" maxlength="1" size="1" style= background-color:yellow ></input> b = 2 <button id="Pruef243" onclick="Aufgabe243()">Prüfen</button></p></pre>  
+a = <input type="text" id="Eintrag243" maxlength="1"  ></input> b = 2 <button id="Pruef243" onclick="Aufgabe243()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe243() { 
@@ -2279,7 +2346,7 @@ a = <input type="text" id="Eintrag243" maxlength="1" size="1" style= background-
 
 <img src="Aufgabe244.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe244.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe244.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 245-->
 
@@ -2287,7 +2354,7 @@ a = <input type="text" id="Eintrag243" maxlength="1" size="1" style= background-
 
 <img src="Aufgabe245.jpg" >
 
-a = <input type="text" id="Eintrag245" maxlength="1" size="1" style= background-color:yellow ></input> d = -1 <button id="Pruef245" onclick="Aufgabe245()">Prüfen</button></p></pre>  
+a = <input type="text" id="Eintrag245" maxlength="1"  ></input> d = -1 <button id="Pruef245" onclick="Aufgabe245()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe245() { 
@@ -2308,7 +2375,7 @@ a = <input type="text" id="Eintrag245" maxlength="1" size="1" style= background-
         
 <img src="Aufgabe246.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe246.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe246.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 247-->
 
@@ -2316,7 +2383,7 @@ a = <input type="text" id="Eintrag245" maxlength="1" size="1" style= background-
 
 <img src="Aufgabe247.jpg" >
 
-b = <input type="text" id="Eintrag247" maxlength="1" size="1" style= background-color:yellow ></input> d = -1 <button id="Pruef247" onclick="Aufgabe247()">Prüfen</button></p></pre>  
+b = <input type="text" id="Eintrag247" maxlength="1"  ></input> d = -1 <button id="Pruef247" onclick="Aufgabe247()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe247() { 
@@ -2337,7 +2404,7 @@ b = <input type="text" id="Eintrag247" maxlength="1" size="1" style= background-
 
 <img src="Aufgabe248.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe248.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe248.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 249-->
 
@@ -2345,7 +2412,7 @@ b = <input type="text" id="Eintrag247" maxlength="1" size="1" style= background-
 
 <img src="Aufgabe249.jpg" >   
 
-a = <input type="text" id="Eintrag249" maxlength="1" size="1" style= background-color:yellow ></input> b = 2, c = 1 <button id="Pruef249" onclick="Aufgabe249()">Prüfen</button></p></pre>  
+a = <input type="text" id="Eintrag249" maxlength="1"  ></input> b = 2, c = 1 <button id="Pruef249" onclick="Aufgabe249()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe249() { 
@@ -2366,7 +2433,7 @@ a = <input type="text" id="Eintrag249" maxlength="1" size="1" style= background-
 
 <img src="Aufgabe250.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe250.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe250.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 251-->
 
@@ -2374,7 +2441,7 @@ a = <input type="text" id="Eintrag249" maxlength="1" size="1" style= background-
 
 <img src="Aufgabe251.jpg" >   
 
-a = 3; c = 2; d = <input type="text" id="Eintrag251" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef251" onclick="Aufgabe251()">Prüfen</button></p></pre>  
+a = 3; c = 2; d = <input type="text" id="Eintrag251" maxlength="2"  ></input> <button id="Pruef251" onclick="Aufgabe251()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe251() { 
@@ -2395,7 +2462,7 @@ a = 3; c = 2; d = <input type="text" id="Eintrag251" maxlength="2" size="1" styl
 
 <img src="Aufgabe252.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe252.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe252.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 253-->
 
@@ -2403,7 +2470,7 @@ a = 3; c = 2; d = <input type="text" id="Eintrag251" maxlength="2" size="1" styl
 
 <img src="Aufgabe253.jpg" >
 
-a = 2; c = <input type="text" id="Eintrag253" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef253" onclick="Aufgabe253()">Prüfen</button></p></pre>  
+a = 2; c = <input type="text" id="Eintrag253" maxlength="2"  ></input> <button id="Pruef253" onclick="Aufgabe253()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe253() { 
@@ -2424,7 +2491,7 @@ a = 2; c = <input type="text" id="Eintrag253" maxlength="2" size="1" style= back
 
 <img src="Aufgabe254.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe254.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe254.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 255-->
 
@@ -2433,7 +2500,7 @@ a = 2; c = <input type="text" id="Eintrag253" maxlength="2" size="1" style= back
 Bestimmen Sie c für den dargestellten Graphen 
 der Form y = a * cos (b * (x + c)) + d    
 
-c = <input type="text" id="Eintrag255" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef255" onclick="Aufgabe255()">Prüfen</button></p></pre>
+c = <input type="text" id="Eintrag255" maxlength="1"  ></input> <button id="Pruef255" onclick="Aufgabe255()">Prüfen</button></p>
 
 <img src="Aufgabe255.jpg" >
 
@@ -2459,7 +2526,7 @@ der Form y = a * cos (b * (x + c)) + d
 
 <img src="Aufgabe256.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe256.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe256.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 257-->
 
@@ -2468,7 +2535,7 @@ der Form y = a * cos (b * (x + c)) + d
 Bestimmen Sie c für den dargestellten Graphen 
 der Form y = a * cos (b * (x + c)) + d   
 
-c = <input type="text" id="Eintrag257" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef257" onclick="Aufgabe257()">Prüfen</button></p></pre>
+c = <input type="text" id="Eintrag257" maxlength="2"  ></input> <button id="Pruef257" onclick="Aufgabe257()">Prüfen</button></p>
 
 <img src="Aufgabe257.jpg" >
 
@@ -2494,7 +2561,7 @@ der Form y = a * cos (b * (x + c)) + d
 
 <img src="Aufgabe258.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe258.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe258.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 259-->
 
@@ -2503,7 +2570,7 @@ der Form y = a * cos (b * (x + c)) + d
 Bestimmen Sie b für den dargestellten Graphen 
 der Form y = a * cos (b * (x + c)) + d        
 
-b = <input type="text" id="Eintrag259" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef259" onclick="Aufgabe259()">Prüfen</button></p></pre>
+b = <input type="text" id="Eintrag259" maxlength="2"  ></input> <button id="Pruef259" onclick="Aufgabe259()">Prüfen</button></p>
 
 <img src="Aufgabe259.jpg" >
 
@@ -2529,7 +2596,7 @@ der Form y = a * cos (b * (x + c)) + d
 
 <img src="Aufgabe260.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe260.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe260.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 261-->
 
@@ -2538,7 +2605,7 @@ der Form y = a * cos (b * (x + c)) + d
 Bestimmen Sie d für den dargestellten Graphen 
 der Form y = a * cos (b * (x + c)) + d
 
-d = <input type="text" id="Eintrag261" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef261" onclick="Aufgabe261()">Prüfen</button></p></pre>
+d = <input type="text" id="Eintrag261" maxlength="1"  ></input> <button id="Pruef261" onclick="Aufgabe261()">Prüfen</button></p>
 
 <img src="Aufgabe261.jpg" >
 
@@ -2564,7 +2631,7 @@ der Form y = a * cos (b * (x + c)) + d
 
 <img src="Aufgabe262.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe262.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe262.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 263-->
 
@@ -2573,7 +2640,7 @@ der Form y = a * cos (b * (x + c)) + d
 Bestimmen Sie d für den dargestellten Graphen 
 der Form y = a * cos (b * (x + c)) + d     
 
-d = <input type="text" id="Eintrag263" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef263" onclick="Aufgabe263()">Prüfen</button></p></pre>
+d = <input type="text" id="Eintrag263" maxlength="1"  ></input> <button id="Pruef263" onclick="Aufgabe263()">Prüfen</button></p>
 
 <img src="Aufgabe263.jpg" >
 
@@ -2599,7 +2666,7 @@ der Form y = a * cos (b * (x + c)) + d
 
 <img src="Aufgabe264.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe264.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('e-Funkt_Aufgabe264.html');" >Lösung</button></p>
 
 <p class="Aufgabe"><span style= "background-color:white;">Bestimmen Sie die angegebenen Parameter <br> 
 für die dargestellten Graphen der Form <br> y = a * sin(b * (x + c)) + d</span></p>
@@ -2610,7 +2677,7 @@ für die dargestellten Graphen der Form <br> y = a * sin(b * (x + c)) + d</span>
 
 <img src="Aufgabe265.jpg" >
 
-a = <input type="text" id="Eintrag265" maxlength="1" size="1" style= background-color:yellow ></input> b = 2 <button id="Pruef265" onclick="Aufgabe265()">Prüfen</button></p></pre>  
+a = <input type="text" id="Eintrag265" maxlength="1"  ></input> b = 2 <button id="Pruef265" onclick="Aufgabe265()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe265() { 
@@ -2631,7 +2698,7 @@ a = <input type="text" id="Eintrag265" maxlength="1" size="1" style= background-
 
 <img src="Aufgabe266.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe266.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe266.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 267-->
 
@@ -2639,7 +2706,7 @@ a = <input type="text" id="Eintrag265" maxlength="1" size="1" style= background-
 
 <img src="Aufgabe267.jpg" >
 
-a = <input type="text" id="Eintrag267" maxlength="1" size="1" style= background-color:yellow ></input> d = -1 <button id="Pruef267" onclick="Aufgabe267()">Prüfen</button></p></pre>  
+a = <input type="text" id="Eintrag267" maxlength="1"  ></input> d = -1 <button id="Pruef267" onclick="Aufgabe267()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe267() { 
@@ -2660,7 +2727,7 @@ a = <input type="text" id="Eintrag267" maxlength="1" size="1" style= background-
 
 <img src="Aufgabe268.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe268.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe268.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 269-->
 
@@ -2668,7 +2735,7 @@ a = <input type="text" id="Eintrag267" maxlength="1" size="1" style= background-
 
 <img src="Aufgabe269.jpg" >
 
-b = <input type="text" id="Eintrag269" maxlength="1" size="1" style= background-color:yellow ></input> d = -1 <button id="Pruef269" onclick="Aufgabe269()">Prüfen</button></p></pre>  
+b = <input type="text" id="Eintrag269" maxlength="1"  ></input> d = -1 <button id="Pruef269" onclick="Aufgabe269()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe269() { 
@@ -2689,7 +2756,7 @@ b = <input type="text" id="Eintrag269" maxlength="1" size="1" style= background-
 
 <img src="Aufgabe270.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe270.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe270.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 271-->
 
@@ -2697,7 +2764,7 @@ b = <input type="text" id="Eintrag269" maxlength="1" size="1" style= background-
 
 <img src="Aufgabe271.jpg" >
 
-a = <input type="text" id="Eintrag271" maxlength="1" size="1" style= background-color:yellow ></input> b = 2; c = 1 <button id="Pruef271" onclick="Aufgabe271()">Prüfen</button></p></pre>  
+a = <input type="text" id="Eintrag271" maxlength="1"  ></input> b = 2; c = 1 <button id="Pruef271" onclick="Aufgabe271()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe271() { 
@@ -2718,7 +2785,7 @@ a = <input type="text" id="Eintrag271" maxlength="1" size="1" style= background-
 
 <img src="Aufgabe272.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe272.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('e-Funkt_Aufgabe272.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 273-->
 
@@ -2726,9 +2793,9 @@ a = <input type="text" id="Eintrag271" maxlength="1" size="1" style= background-
 
 <img src="Aufgabe273.jpg" >
 
-a = 3; c = 2; d = <input type="text" id="Eintrag273" maxlength="2" size="1" style= background-color:yellow ></input> b = 2; c = 1 
+a = 3; c = 2; d = <input type="text" id="Eintrag273" maxlength="2"  ></input> b = 2; c = 1 
 
-<button id="Pruef273" onclick="Aufgabe273()">Prüfen</button></p></pre>  
+<button id="Pruef273" onclick="Aufgabe273()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe273() { 
@@ -2749,7 +2816,7 @@ a = 3; c = 2; d = <input type="text" id="Eintrag273" maxlength="2" size="1" styl
 
 <img src="Aufgabe274.jpg" >
      
-<button  onclick="window.open('e-Funkt_Aufgabe274.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('e-Funkt_Aufgabe274.html');" >Lösung</button></p>
 
 <!--//Aufgabe 275-->
 
@@ -2757,7 +2824,7 @@ a = 3; c = 2; d = <input type="text" id="Eintrag273" maxlength="2" size="1" styl
 
 <img src="Aufgabe275.jpg" >
 
-a = 2; c = <input type="text" id="Eintrag275" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef275" onclick="Aufgabe275()">Prüfen</button></p></pre>  
+a = 2; c = <input type="text" id="Eintrag275" maxlength="2"  ></input> <button id="Pruef275" onclick="Aufgabe275()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe275() { 
